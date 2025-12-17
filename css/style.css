@@ -4628,7 +4628,7 @@ header {
     }
 } 
 
-@media (max-width: 360px) {
+@media (max-width: 370px) {
     header {
         padding: 8px 0;
     }
@@ -5523,4 +5523,5 @@ header {
         }
     }
 }
+
 
