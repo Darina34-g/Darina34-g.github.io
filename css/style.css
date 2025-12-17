@@ -4559,6 +4559,135 @@ header {
     border-color: #FF516E;
 }
 
+
+footer {
+    background: linear-gradient(#FFF5EA, #FFD7D7);
+    padding: 30px 0 15px;
+    position: relative;
+    margin-top: auto;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.nav-left {
+    display: flex;
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 12px;
+    font-size: 18px;
+    font-family: 'Geologica_Auto-Light';
+    padding: 0;
+    margin: 0;
+}
+
+.footer-nav li {
+    margin: 0;
+}
+
+.footer-nav a {
+    color: #2B2B2B;
+    font-size: 16px;
+    transition: color 0.3s;
+    text-decoration: none;
+    padding: 3px 0;
+}
+
+.footer-nav a:hover {
+    color: #ff6b6b;
+}
+
+.nav-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    min-width: 250px;
+}
+
+.nav-right h4 {
+    font-size: 20px;
+    color: #FF516E;
+    margin-bottom: 15px;
+    font-family: 'Geologica_Auto-Light';
+    font-weight: bold;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.contacts .text {
+    font-size: 16px;
+    color: #2B2B2B;
+    font-family: 'Geologica_Auto-Light';
+    margin: 0;
+    line-height: 1.4;
+}
+
+.contacts div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.metka {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+.footer-apps {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer-icons {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s;
+}
+
+.footer-icons:hover {
+    transform: scale(1.1);
+}
+
+.footer-title {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #504F4F;
+    font-family: 'Geologica_Auto-Light';
+    margin: 0;
+    white-space: nowrap;
+    text-align: center;
+    width: 100%;
+}
+
 @media (max-width: 1024px) {
     .logo {
         width: 100px;
@@ -4580,6 +4709,207 @@ header {
     }
 }
 
+@media (max-width: 768px) {
+    .hat {
+        padding: 0 15px;
+    }
+    
+    .logo {
+        width: 90px;
+    }
+    
+    .header-icons {
+        gap: 10px;
+    }
+    
+    .hat-marker {
+        width: 38px;
+        height: 38px;
+    }
+    
+    .footer {
+        flex-direction: column;
+        gap: 25px;
+        padding: 0 15px;
+    }
+    
+    .nav-left, .nav-right {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .contacts {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .contacts div {
+        justify-content: center;
+    }
+    
+    .footer-apps {
+        justify-content: center;
+    }
+    
+    .footer-title {
+        position: static;
+        transform: none;
+        margin-top: 20px;
+        order: 3;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 80px;
+    }
+    
+    .header-icons {
+        display: none !important;
+    }
+    
+    .burger-btn {
+        display: flex;
+        order: 2;
+        margin-left: auto;
+    }
+    
+    .desktop-nav {
+        display: none !important;
+    }
+    
+    .mobile-menu,
+    .menu-close-overlay {
+        display: block;
+    }
+    
+    #burger-toggle:checked ~ .mobile-menu {
+        right: 0;
+    }
+    
+    #burger-toggle:checked ~ .menu-close-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    #burger-toggle:checked ~ .strelka-mobileback {
+        display: block;
+    }
+    
+    .footer {
+        padding: 20px 15px 15px;
+        gap: 20px;
+    }
+    
+    .footer-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .nav-right h4 {
+        font-size: 18px;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .contacts .text {
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .metka {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .footer-icons {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .footer-title {
+        font-size: 12px;
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px solid rgba(255, 81, 110, 0.2);
+    }
+}
+
+@media (max-width: 320px) {
+    .hat {
+        padding: 10px 10px;
+        height: 70px;
+    }
+    
+    .logo {
+        width: 70px;
+    }
+    
+    .burger-btn {
+        width: 26px;
+        height: 20px;
+    }
+    
+    .burger-line {
+        height: 2.5px;
+    }
+    
+    .mobile-menu {
+        width: 250px;
+        padding: 70px 15px 30px;
+    }
+    
+    .mobile-menu__link {
+        padding: 10px 12px;
+        font-size: 15px;
+    }
+    
+    .strelka-mobileback button {
+        width: 35px;
+        height: 35px;
+        top: 15px;
+        right: 15px;
+    }
+    
+    .footer {
+        padding: 15px 10px 10px;
+    }
+    
+    .contacts {
+        gap: 8px;
+    }
+    
+    .contacts .text {
+        font-size: 13px;
+    }
+    
+    .footer-nav a {
+        font-size: 15px;
+    }
+    
+    .footer-title {
+        font-size: 11px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hat {
+        padding: 0 0;
+    }
+    
+    .footer {
+        padding: 0 0;
+    }
+}
 
 @media (min-width: 481px) and (max-width: 767px) {
     .desktop-nav {
@@ -4626,92 +4956,5 @@ header {
     .mobile-menu__link {
         padding: 8px 15px;
     }
-} 
-
-/* Для 370px и меньше */
-@media (max-width: 370px) {
-    .desktop-nav {
-        display: none !important;
-    }
-    
-    .burger-btn {
-        display: flex !important;
-        order: 3;
-        margin-left: auto;
-        margin-right: 0;
-        width: 28px;
-        height: 22px;
-    }
-    
-    .burger-line {
-        height: 2.5px;
-    }
-    
-    .header-icons {
-        display: none !important;
-    }
-    
-    .mobile-menu {
-        display: block;
-        width: 260px;
-        padding: 75px 15px 25px;
-    }
-    
-    .menu-close-overlay {
-        display: block;
-    }
-    
-    .hat {
-        padding: 10px 12px !important;
-        height: 65px;
-    }
-    
-    .logo {
-        width: 70px !important;
-    }
-    
-    #burger-toggle:checked ~ .strelka-mobileback {
-        display: block !important;
-    }
 }
-
-/* Для 320px и меньше (дополнительные правки) */
-@media (max-width: 320px) {
-    .hat {
-        padding: 8px 10px !important;
-        height: 60px;
-    }
-    
-    .logo {
-        width: 65px !important;
-    }
-    
-    .burger-btn {
-        width: 26px;
-        height: 20px;
-    }
-    
-    .mobile-menu {
-        width: 240px;
-        padding: 70px 10px 20px;
-    }
-}
-@media (min-width: 371px) {
-    .burger-btn {
-        display: none !important;
-    }
-    
-    .mobile-menu {
-        display: none !important;
-    }
-    
-    .desktop-nav {
-        display: flex !important;
-    }
-    
-    .header-icons {
-        display: flex !important;
-    }
-}
-
 
