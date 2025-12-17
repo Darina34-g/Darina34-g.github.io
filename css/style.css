@@ -4560,134 +4560,6 @@ header {
 }
 
 
-footer {
-    background: linear-gradient(#FFF5EA, #FFD7D7);
-    padding: 30px 0 15px;
-    position: relative;
-    margin-top: auto;
-}
-
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    position: relative;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-
-.nav-left {
-    display: flex;
-    flex: 1;
-    min-width: 200px;
-}
-
-.footer-nav {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    gap: 12px;
-    font-size: 18px;
-    font-family: 'Geologica_Auto-Light';
-    padding: 0;
-    margin: 0;
-}
-
-.footer-nav li {
-    margin: 0;
-}
-
-.footer-nav a {
-    color: #2B2B2B;
-    font-size: 16px;
-    transition: color 0.3s;
-    text-decoration: none;
-    padding: 3px 0;
-}
-
-.footer-nav a:hover {
-    color: #ff6b6b;
-}
-
-.nav-right {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex: 1;
-    min-width: 250px;
-}
-
-.nav-right h4 {
-    font-size: 20px;
-    color: #FF516E;
-    margin-bottom: 15px;
-    font-family: 'Geologica_Auto-Light';
-    font-weight: bold;
-}
-
-.contacts {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    margin-bottom: 20px;
-    width: 100%;
-}
-
-.contacts .text {
-    font-size: 16px;
-    color: #2B2B2B;
-    font-family: 'Geologica_Auto-Light';
-    margin: 0;
-    line-height: 1.4;
-}
-
-.contacts div {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    gap: 10px;
-}
-
-.metka {
-    width: 16px;
-    height: 16px;
-    flex-shrink: 0;
-}
-
-.footer-apps {
-    display: flex;
-    gap: 15px;
-    margin-top: 10px;
-}
-
-.footer-icons {
-    width: 32px;
-    height: 32px;
-    transition: transform 0.3s;
-}
-
-.footer-icons:hover {
-    transform: scale(1.1);
-}
-
-.footer-title {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 14px;
-    color: #504F4F;
-    font-family: 'Geologica_Auto-Light';
-    margin: 0;
-    white-space: nowrap;
-    text-align: center;
-    width: 100%;
-}
-
 @media (max-width: 1024px) {
     .logo {
         width: 100px;
@@ -4957,6 +4829,7 @@ footer {
         padding: 8px 15px;
     }
 }
+
 
 
 
