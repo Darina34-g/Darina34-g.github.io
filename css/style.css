@@ -4560,6 +4560,14 @@ header {
 }
 
 
+footer {
+    background: linear-gradient(#FFF5EA, #FFD7D7);
+    padding: 30px 0 15px;
+    position: relative;
+    margin-top: auto;
+}
+
+
 @media (max-width: 1024px) {
     .logo {
         width: 100px;
@@ -4829,7 +4837,4 @@ header {
         padding: 8px 15px;
     }
 }
-
-
-
 
