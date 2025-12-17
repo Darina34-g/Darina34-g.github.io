@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time for sweet</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="Pictures/Иконка.png">
+</head>
+
+<body>
+    <input type="checkbox" id="burger-toggle" class="burger-toggle">
+    <label for="burger-toggle" class="menu-close-overlay"></label>
+    
+    <header>
+        <div class="hat">
+            <img class="logo" src="Pictures/Иконка.png" alt="Логотип">
+            
+            <label for="burger-toggle" class="burger-btn">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </label>
+            
+            <nav class="desktop-nav">
+                <div class="nav-style">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="vacancy.html">Вакансии</a></li>
+                    <li><label for="auth-modal" class="open-modal">Вход</label></li>
+                </div>
+                <div class="nav-catalouge">
+                    <li><a href="catalouge.html#cakes">Торты</a></li>
+                    <li><a href="catalouge.html#pastries">Пирожные</a></li>
+                    <li><a href="catalouge.html#pies">Пироги</a></li>
+                    <li><a href="catalouge.html#cookies">Печенье</a></li>
+                    <li><a href="catalouge.html#drinks">Напитки</a></li>
+                </div>
+            </nav>
+            
+            <div class="header-icons">
+                <a href="bin.html"><img src="Pictures/func/Корзина.png" alt="Корзина" class="hat-marker"></a>
+                <a href="profile.html"><img src="Pictures/func/Профиль.png" alt="Профиль" class="hat-marker"></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="strelka-mobileback">
+        <button id="mobile-back-btn">
+            <img src="Pictures/func/Frame 106.svg" alt="Назад">
+        </button> 
+    </div>
+    
+    <div class="mobile-menu">
+        <div class="mobile-menu__content">
+            <div class="mobile-menu__section">
+                <h4 class="mobile-menu__title">Навигация</h4>
+                <ul class="mobile-menu__list">
+                    <li><a href="index.html" class="mobile-menu__link">Главная</a></li>
+                    <li><a href="about.html" class="mobile-menu__link">О нас</a></li>
+                    <li><a href="vacancy.html" class="mobile-menu__link">Вакансии</a></li>
+                    <li><a href="profile.html" class="mobile-menu__link">Профиль</a></li>
+                    <li><label for="auth-modal" class="mobile-menu__link open-modal">Вход</label></li>
+                    <li><a href="bin.html" class="mobile-menu__link">Корзина</a></li>
+                </ul>
+            </div>
+            <div class="mobile-menu__section">
+                <h4 class="mobile-menu__title">Каталог</h4>
+                <ul class="mobile-menu__list">
+                    <li><a href="catalouge.html#cakes" class="mobile-menu__link">Торты</a></li>
+                    <li><a href="catalouge.html#pastries" class="mobile-menu__link">Пирожные</a></li>
+                    <li><a href="catalouge.html#pies" class="mobile-menu__link">Пироги</a></li>
+                    <li><a href="catalouge.html#cookies" class="mobile-menu__link">Печенье</a></li>
+                    <li><a href="catalouge.html#drinks" class="mobile-menu__link">Напитки</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+            <main class="main main--vacancy">
+                <section class="vacancy-hero">
+                    <div class="vacancy-hero__title">
+                        <div class="border border--decorative"></div>
+                        <h1 class="vacancy-hero__heading">Приглашаем на работу</h1>
+                        <div class="border border--decorative"></div>
+                    </div>
+                </section>
+        
+                <section class="vacancy-cards">
+                    <div class="vacancy-cards__container">
+                        <article class="vacancy-card">
+                            <div class="vacancy-card__image-wrapper">
+                                <img src="Pictures/vacancy/Повар-кондитер.png" 
+                                     alt="Повар-кондитер" 
+                                     class="vacancy-card__image">
+                            </div>
+                            <div class="vacancy-card__overlay">
+                                <div class="vacancy-card__content">
+                                    <h3 class="vacancy-card__title">Повар-кондитер</h3>
+                                    <div class="vacancy-card__details">
+                                        <p class="vacancy-card__detail">Зарплата: <span class="vacancy-card__more-details">от 80 000 ₽</span></p>
+                                        <p class="vacancy-card__detail">График: <span class="vacancy-card__more-details">5/2</span></p>
+                                        <p class="vacancy-card__detail">Опыт: <span class="vacancy-card__more-details">от 3 лет</span></p>
+                                        </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="vacancy-card">
+                            <div class="vacancy-card__image-wrapper">
+                                <img src="Pictures/vacancy/Бариста.png" 
+                                     alt="Бариста" 
+                                     class="vacancy-card__image">
+                            </div>
+                            <div class="vacancy-card__overlay">
+                                <div class="vacancy-card__content">
+                                    <h3 class="vacancy-card__title">Бариста</h3>
+                                    <div class="vacancy-card__details">
+                                        <p class="vacancy-card__detail">Зарплата: <span class="vacancy-card__more-details">от 65 000 ₽</span></p>
+                                        <p class="vacancy-card__detail">График: <span class="vacancy-card__more-details">2/2</span></p>
+                                        <p class="vacancy-card__detail">Опыт: <span class="vacancy-card__more-details">от 1 года</span></p>
+                                        </div>
+                            </div>
+                        </article>
+        
+                        <article class="vacancy-card">
+                            <div class="vacancy-card__image-wrapper">
+                                <img src="Pictures/vacancy/Продавец-кассир.png" 
+                                     alt="Продавец-кассир" 
+                                     class="vacancy-card__image">
+                            </div>
+                            <div class="vacancy-card__overlay">
+                                <div class="vacancy-card__content">
+                                    <h3 class="vacancy-card__title">Продавец-кассир</h3>
+                                    <div class="vacancy-card__details">
+                                        <p class="vacancy-card__detail">Зарплата: <span class="vacancy-card__more-details">от 60 000 ₽</span></p>
+                                        <p class="vacancy-card__detail">График: <span class="vacancy-card__more-details">5/2</span></p>
+                                        <p class="vacancy-card__detail">Опыт: <span class="vacancy-card__more-details">от 6 месяцев</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </main>
+        <footer>
+            <div class="footer">
+                <div class="nav-left">
+                    <nav class="footer-nav">
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="vacancy.html">Вакансии</a></li>
+                    </nav>
+                </div>
+                <div class="nav-right">
+                    <h4>Контакты</h4>
+                    <div class="contacts">
+                        <p class="text">+79104158123</p>
+                        <p class="text">tfsweet@gmail.com</p>
+                        <img src="/web/Pictures/marker 1.png" alt="Метка">
+                        <p class="text">Санкт-Петербург, Невский проспект, 65</p>
+                    </div>
+                    <div class="footer-apps">
+                        <a href="http://"><img src="Pictures/apps/Vk.png" alt="Vk" class="footer-icons"></a>
+                        <a href="http://"><img src="Pictures/apps/Telegram.png" alt="Telegram" class="footer-icons"></a>
+                    </div>
+            </div>
+                <p class="footer-title">TIME for SWEET©2007 - 2025</p>
+            </div>
+        </main>
+    <input type="checkbox" id="auth-modal">
+        <div class="autorize-overlay">
+            <div class="autorize">
+                <label for="auth-modal" class="close-btn">
+                    <img src="Pictures/func/exit.png" alt="выход">
+                </label>
+                <div class="title-autorize">
+                    <p>Вход в аккаунт</p>
+                </div>
+                <form action="/test" method="get">
+                    <div>
+                        <div class="line-input">
+                            <label for="text" class="cell">Логин</label>
+                            <input type="text" placeholder="Введите логин" name="text" id="text">
+                        </div>
+                        <div class="line-input">
+                            <label for="password" class="cell">Пароль</label>
+                            <input type="password" placeholder="Введите пароль" name="password" id="password">
+                        </div>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" name="member" id="member">
+                        <label for="member">Запомнить меня</label>
+                    </div>
+                    <div>
+                        <button type="submit">Войти</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="js/auth-validation.js"></script>
+</body>
+</html>

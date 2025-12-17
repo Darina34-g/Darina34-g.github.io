@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="Pictures/Иконка.png">
+</head>
+<body>
+    <input type="checkbox" id="burger-toggle" class="burger-toggle">
+    <label for="burger-toggle" class="menu-close-overlay"></label>
+    
+    <header>
+        <div class="hat">
+            <img class="logo" src="Pictures/Иконка.png" alt="Логотип">
+            
+            <label for="burger-toggle" class="burger-btn">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </label>
+            
+            <nav class="desktop-nav">
+                <div class="nav-style">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="vacancy.html">Вакансии</a></li>
+                    <li><a href="profile.html" class="active">Профиль</a></li>
+                </div>
+                <div class="nav-catalouge">
+                    <li><a href="catalouge.html#cakes">Торты</a></li>
+                    <li><a href="catalouge.html#pastries">Пирожные</a></li>
+                    <li><a href="catalouge.html#pies">Пироги</a></li>
+                    <li><a href="catalouge.html#cookies">Печенье</a></li>
+                    <li><a href="catalouge.html#drinks">Напитки</a></li>
+                </div>
+            </nav>
+            
+            <div class="header-icons">
+                <a href="bin.html"><img src="Pictures/func/Корзина.png" alt="Корзина" class="hat-marker"></a>
+                <a href="profile.html"><img src="Pictures/func/Профиль.png" alt="Профиль" class="hat-marker"></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="strelka-mobileback">
+        <button id="mobile-back-btn">
+            <img src="Pictures/func/Frame 106.svg" alt="Назад">
+        </button> 
+    </div>
+    
+    <div class="mobile-menu">
+        <div class="mobile-menu__content">
+            <div class="mobile-menu__section">
+                <h4 class="mobile-menu__title">Навигация</h4>
+                <ul class="mobile-menu__list">
+                    <li><a href="index.html" class="mobile-menu__link">Главная</a></li>
+                    <li><a href="about.html" class="mobile-menu__link">О нас</a></li>
+                    <li><a href="vacancy.html" class="mobile-menu__link">Вакансии</a></li>
+                    <li><a href="profile.html" class="mobile-menu__link active">Профиль</a></li>
+                    <li><a href="bin.html" class="mobile-menu__link">Корзина</a></li>
+                </ul>
+            </div>
+            <div class="mobile-menu__section">
+                <h4 class="mobile-menu__title">Каталог</h4>
+                <ul class="mobile-menu__list">
+                    <li><a href="catalouge.html#cakes" class="mobile-menu__link">Торты</a></li>
+                    <li><a href="catalouge.html#pastries" class="mobile-menu__link">Пирожные</a></li>
+                    <li><a href="catalouge.html#pies" class="mobile-menu__link">Пироги</a></li>
+                    <li><a href="catalouge.html#cookies" class="mobile-menu__link">Печенье</a></li>
+                    <li><a href="catalouge.html#drinks" class="mobile-menu__link">Напитки</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <main class="profile-main">
+        <div class="profile-container">
+            <div class="profile-header">
+                <div class="profile-avatar-section">
+                    <div class="profile-avatar-wrapper">
+                        <img src="Pictures/avatar.png" alt="Аватар" class="profile-avatar">
+                    </div>
+                    <div class="profile-name-section">
+                        <h1 class="profile-name">Антонина</h1>
+                    </div>
+                </div>
+                
+                <div class="profile-contact-info">
+                    <div class="contact-item">
+                        <span class="contact-label">Номер телефона:</span>
+                        <span class="contact-value">+7(978)268-62-96</span>
+                    </div>
+                </div>
+                
+                <button class="logout-btn">Выйти</button>
+            </div>
+            
+            <div class="profile-sections">
+                <section class="profile-section orders-section">
+                    <h2 class="section-title-profile">История заказов</h2>
+                    <div class="orders-list">
+                        <div class="order-item" data-order-id="1">
+                            <div class="order-details">
+                                <span class="order-items">Торт "Звёздная мечта"</span>
+                                <span class="order-total">2 600 руб</span>
+                            </div>
+                            <div class="order-actions">
+                                <button class="order-details-btn" data-order-id="1">Подробнее о заказе</button>
+                            </div>
+                        </div>
+                        
+                        <div class="order-item" data-order-id="2">
+                            <div class="order-details">
+                                <span class="order-items">Торт "Звёздная мечта", Пирожное "Апельсин"</span>
+                                <span class="order-total">3 010 руб</span>
+                            </div>
+                            <div class="order-actions">
+                                <button class="order-details-btn" data-order-id="2">Подробнее о заказе</button>
+                            </div>
+                        </div>
+                        
+                        <div class="order-item" data-order-id="3">
+                            <div class="order-details">
+                                <span class="order-items">Клубничный Фраппе</span>
+                                <span class="order-total">360 руб</span>
+                            </div>
+                            <div class="order-actions">
+                                <button class="order-details-btn" data-order-id="3">Подробнее о заказе</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    
+    <div id="orderDetailsModal" class="order-details-modal">
+        <div class="order-details-content">
+            <button class="order-details-close-btn">
+                <img src="Pictures/func/exit.png" alt="Закрыть">
+            </button>
+            <div class="order-details-header">
+                <h3 class="order-details-title">Торт "Звёздная мечта"</h3>
+            </div>
+            <div class="order-details-info">
+                <div class="order-details-row">
+                    <span class="order-details-label">Дата выдачи:</span>
+                    <span class="order-details-value">10.10.2025</span>
+                </div>
+                <div class="order-details-row">
+                    <span class="order-details-label">Филиал кондитерской:</span>
+                    <span class="order-details-value">Невский пр., 65</span>
+                </div>
+                <div class="order-details-row">
+                    <span class="order-details-label">Время выдачи:</span>
+                    <span class="order-details-value">15:45</span>
+                </div>
+                <div class="order-details-row">
+                    <span class="order-details-label">Сумма заказа:</span>
+                    <span class="order-details-value total-amount">2 600 руб</span>
+                </div>
+            </div>
+            <div class="order-details-image">
+                <img src="Pictures/Торт Звёздная мечта.png" alt="Торт Звёздная мечта">
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer">
+            <div class="nav-left">
+                <nav class="footer-nav">
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="vacancy.html">Вакансии</a></li>
+                </nav>
+            </div>
+            <div class="nav-right">
+                <h4>Контакты</h4>
+                <div class="contacts">
+                    <p class="text">+79104158123</p>
+                    <p class="text">tfsweet@gmail.com</p>
+                    <img src="Pictures/marker 1.png" alt="Метка" class="metka">
+                    <p class="text">Санкт-Петербург, Невский проспект, 65</p>
+                </div>
+                <div class="footer-apps">
+                    <a href="http://"><img src="Pictures/apps/Vk.png" alt="Vk" class="footer-icons"></a>
+                    <a href="http://"><img src="Pictures/apps/Telegram.png" alt="Telegram" class="footer-icons"></a>
+                </div>
+            </div>
+            <p class="footer-title">TIME for SWEET©2007 - 2025</p>
+        </div>
+    </footer>
+
+    <div id="sweetAlert" class="alert-overlay">
+        <div class="alert-box">
+            <h3 class="alert-title">Выход из аккаунта</h3>
+            <p class="alert-message">Вы уверены, что хотите выйти из аккаунта?</p>
+            <div class="alert-buttons">
+                <button class="alert-btn confirm-btn">Да, выйти</button>
+                <button class="alert-btn cancel-btn">Отмена</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const burgerToggle = document.getElementById('burger-toggle');
+            const menuCloseOverlay = document.querySelector('.menu-close-overlay');
+            const mobileBackBtn = document.getElementById('mobile-back-btn');
+            const mobileMenuLinks = document.querySelectorAll('.mobile-menu__link');
+            const logoutBtn = document.querySelector('.logout-btn');
+            const sweetAlert = document.getElementById('sweetAlert');
+            const confirmBtn = document.querySelector('.confirm-btn');
+            const cancelBtn = document.querySelector('.cancel-btn');
+            const orderDetailsModal = document.getElementById('orderDetailsModal');
+            const orderDetailsCloseBtn = document.querySelector('.order-details-close-btn');
+            const orderDetailsBtns = document.querySelectorAll('.order-details-btn');
+        
+            const ordersData = {
+                1: {
+                    title: 'Торт "Звёздная мечта"',
+                    date: '10.10.2025',
+                    branch: 'Невский пр., 65',
+                    time: '15:45',
+                    total: '2 600 руб',
+                    image: 'Pictures/Торт Звёздная мечта.png'
+                },
+                2: {
+                    title: 'Торт "Звёздная мечта", Пирожное "Апельсин"',
+                    date: '15.12.2025',
+                    branch: 'Невский пр., 65',
+                    time: '14:30',
+                    total: '3 010 руб',
+                    image: 'Pictures/Торт Звёздная мечта.png'
+                },
+                3: {
+                    title: 'Клубничный Фраппе',
+                    date: '10.12.2025',
+                    branch: 'Невский пр., 65',
+                    time: '16:15',
+                    total: '360 руб',
+                    image: 'Pictures/Клубничный фраппе.png'
+                }
+            };
+            
+            if (menuCloseOverlay) {
+                menuCloseOverlay.addEventListener('click', function() {
+                    burgerToggle.checked = false;
+                    document.body.style.overflow = '';
+                });
+            }
+            
+            if (mobileBackBtn) {
+                mobileBackBtn.addEventListener('click', function() {
+                    burgerToggle.checked = false;
+                    document.body.style.overflow = '';
+                });
+            }
+            
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    burgerToggle.checked = false;
+                    document.body.style.overflow = '';
+                });
+            });
+            
+            if (burgerToggle) {
+                burgerToggle.addEventListener('change', function() {
+                    if (this.checked) {
+                        document.body.style.overflow = 'hidden';
+                    } else {
+                        document.body.style.overflow = '';
+                    }
+                });
+            }
+            
+            orderDetailsBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const orderId = this.getAttribute('data-order-id');
+                    const orderData = ordersData[orderId];
+                    
+                    if (orderData) {
+
+                        document.querySelector('.order-details-title').textContent = orderData.title;
+                        document.querySelectorAll('.order-details-row')[0].querySelector('.order-details-value').textContent = orderData.date;
+                        document.querySelectorAll('.order-details-row')[1].querySelector('.order-details-value').textContent = orderData.branch;
+                        document.querySelectorAll('.order-details-row')[2].querySelector('.order-details-value').textContent = orderData.time;
+                        document.querySelector('.total-amount').textContent = orderData.total;
+                        
+                        
+                        const imageElement = document.querySelector('.order-details-image img');
+                        imageElement.src = orderData.image;
+                        imageElement.alt = orderData.title;
+                        
+                    
+                        orderDetailsModal.style.display = 'flex';
+                        document.body.style.overflow = 'hidden';
+                    }
+                });
+            });
+            
+            if (orderDetailsCloseBtn) {
+                orderDetailsCloseBtn.addEventListener('click', function() {
+                    orderDetailsModal.style.display = 'none';
+                    document.body.style.overflow = '';
+                });
+            }
+            
+            orderDetailsModal.addEventListener('click', function(e) {
+                if (e.target === this) {
+                    orderDetailsModal.style.display = 'none';
+                    document.body.style.overflow = '';
+                }
+            });
+            
+            if (logoutBtn) {
+                logoutBtn.addEventListener('click', function() {
+                    sweetAlert.style.display = 'flex';
+                    document.body.style.overflow = 'hidden';
+                });
+            }
+            
+            if (confirmBtn) {
+                confirmBtn.addEventListener('click', function() {
+                    sweetAlert.style.display = 'none';
+                    document.body.style.overflow = '';
+                    window.location.href = 'index.html';
+                });
+            }
+            
+            if (cancelBtn) {
+                cancelBtn.addEventListener('click', function() {
+                    sweetAlert.style.display = 'none';
+                    document.body.style.overflow = '';
+                });
+            }
+            
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    if (burgerToggle.checked) {
+                        burgerToggle.checked = false;
+                        document.body.style.overflow = '';
+                    }
+                    if (sweetAlert.style.display === 'flex') {
+                        sweetAlert.style.display = 'none';
+                        document.body.style.overflow = '';
+                    }
+                    if (orderDetailsModal.style.display === 'flex') {
+                        orderDetailsModal.style.display = 'none';
+                        document.body.style.overflow = '';
+                    }
+                }
+            });
+            
+            sweetAlert.addEventListener('click', function(e) {
+                if (e.target === this) {
+                    sweetAlert.style.display = 'none';
+                    document.body.style.overflow = '';
+                }
+            });
+        });
+    </script>
+    <script src="js/auth-validation.js"></script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+ <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница товара - TIME for SWEET</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="Pictures/Иконка.png">
+<body>
+    <input type="checkbox" id="burger-toggle" class="burger-toggle">
+    <label for="burger-toggle" class="menu-close-overlay"></label>
+    
+    <header>
+        <div class="hat">
+            <img class="logo" src="Pictures/Иконка.png" alt="Логотип">
+            
+            <label for="burger-toggle" class="burger-btn">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </label>
+            
+            <nav class="desktop-nav">
+                <div class="nav-style">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="vacancy.html">Вакансии</a></li>
+                    <li><label for="auth-modal" class="open-modal">Вход</label></li>
+                </div>
+                <div class="nav-catalouge">
+                    <li><a href="catalouge.html#cakes">Торты</a></li>
+                    <li><a href="catalouge.html#pastries">Пирожные</a></li>
+                    <li><a href="catalouge.html#pies">Пироги</a></li>
+                    <li><a href="catalouge.html#cookies">Печенье</a></li>
+                    <li><a href="catalouge.html#drinks">Напитки</a></li>
+                </div>
+            </nav>
+            
+            <div class="header-icons">
+                <a href="bin.html"><img src="Pictures/func/Корзина.png" alt="Корзина" class="hat-marker"></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="strelka-mobileback">
+        <button id="mobile-back-btn">
+            <img src="Pictures/func/Frame 106.svg" alt="Назад">
+        </button> 
+    </div>
+    
+    <div class="mobile-menu">
+        <div class="mobile-menu__content">
+            <div class="mobile-menu__section">
+                <h4 class="mobile-menu__title">Навигация</h4>
+                <ul class="mobile-menu__list">
+                    <li><a href="index.html" class="mobile-menu__link">Главная</a></li>
+                    <li><a href="about.html" class="mobile-menu__link">О нас</a></li>
+                    <li><a href="vacancy.html" class="mobile-menu__link">Вакансии</a></li>
+                    
+                    <li><a href="profile.html" class="mobile-menu__link active">Профиль</a></li>
+                    <li><a href="bin.html" class="mobile-menu__link">Корзина</a></li>
+                    <li><label for="auth-modal" class="mobile-menu__link open-modal">Вход</label></li>
+                </ul>
+            </div>
+            <div class="mobile-menu__section">
+                <h4 class="mobile-menu__title">Каталог</h4>
+                <ul class="mobile-menu__list">
+                    <li><a href="catalouge.html#cakes" class="mobile-menu__link">Торты</a></li>
+                    <li><a href="catalouge.html#pastries" class="mobile-menu__link">Пирожные</a></li>
+                    <li><a href="catalouge.html#pies" class="mobile-menu__link">Пироги</a></li>
+                    <li><a href="catalouge.html#cookies" class="mobile-menu__link">Печенье</a></li>
+                    <li><a href="catalouge.html#drinks" class="mobile-menu__link">Напитки</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <main class="product-page-itempage">
+        <div class="product-container-itempage">
+            <div class="product-gallery-itempage">
+                <img src="Pictures/Sweets/Звёздная мечта.png" alt="Торт Звёздная мечта" class="product-main-image" id="main-image">
+            </div>
+            <div class="product-info-itempage">
+                <div class="marka-hit">
+                    <img src="Pictures/Sweets/марка хит продаж.png" alt="хит продаж">
+                </div>
+                
+                <h1 class="product-title-itempage">Торт "Звёздная мечта"</h1>
+                <div class="product-price-container">
+                    <div class="product-price-itempage">2600 руб.</div>
+                    <div class="product-weight-itempage">2 кг</div>
+                </div>
+                <div class="product-description-itempage">
+                    Торт "Звёздная мечта" — это волшебное сладкое 
+                    угощение, которое перенесет вас в мир космических
+                    фантазий. Нежные слои шоколадного бисквита пропитаны 
+                    ванильным кремом, а сверху покрыт глазурью бирюзового цвета. 
+                    Украшен съедобными звёздочками и блестками.  
+                    Идеальный десерт для особого случая или просто, чтобы 
+                    порадовать себя и близких!
+                </div>
+                
+                <div class="product-actions">
+                    <a href="catalouge.html" class="back-to-catalog-btn">
+                        Вернуться к каталогу
+                    </a>
+                    <button class="add-to-cart-btn" id="add-to-cart">
+                        Добавить в корзину
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer">
+            <div class="nav-left">
+                <nav class="footer-nav">
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="vacancy.html">Вакансии</a></li>
+                </nav>
+            </div>
+            <div class="nav-right">
+                <h4>Контакты</h4>
+                <div class="contacts">
+                    <p class="text">+79104158123</p>
+                    <p class="text">tfsweet@gmail.com</p>
+                    <img src="Pictures/marker 1.png" alt="Метка" class="metka">
+                    <p class="text">Санкт-Петербург, Невский проспект, 65</p>
+                </div>
+                <div class="footer-apps">
+                    <a href="http://"><img src="Pictures/apps/Vk.png" alt="Vk" class="footer-icons"></a>
+                    <a href="http://"><img src="Pictures/apps/Telegram.png" alt="Telegram" class="footer-icons"></a>
+                </div>
+            </div>
+            <p class="footer-title">TIME for SWEET©2007 - 2025</p>
+        </div>
+    </footer>
+    
+    <input type="checkbox" id="auth-modal">
+    <div class="autorize-overlay">
+        <div class="autorize">
+            <label for="auth-modal" class="close-btn">
+                <img src="Pictures/func/exit.png" alt="выход">
+            </label>
+            <div class="title-autorize">
+                <p>Вход в аккаунт</p>
+            </div>
+            <form action="/test" method="get">
+                <div>
+                    <div class="line-input">
+                        <label for="text" class="cell">Логин</label>
+                        <input type="text" placeholder="Введите логин" name="text" id="text">
+                    </div>
+                    <div class="line-input">
+                        <label for="password" class="cell">Пароль</label>
+                        <input type="password" placeholder="Введите пароль" name="password" id="password">
+                    </div>
+                </div>
+                <div class="check">
+                    <input type="checkbox" name="member" id="member">
+                    <label for="member">Запомнить меня</label>
+                </div>
+                <div>
+                    <button type="submit">Войти</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mainImage = document.getElementById('main-image');
+            const thumbnails = document.querySelectorAll('.thumbnail');
+            
+            thumbnails.forEach(thumb => {
+                thumb.addEventListener('click', function() {
+
+                    thumbnails.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    mainImage.src = this.dataset.image;
+                    mainImage.alt = this.alt;
+                });
+            });
+            
+            const quantityInput = document.getElementById('product-quantity');
+            const decreaseBtn = document.getElementById('decrease-qty');
+            const increaseBtn = document.getElementById('increase-qty');
+            
+            decreaseBtn.addEventListener('click', function() {
+                let value = parseInt(quantityInput.value);
+                if (value > 1) {
+                    quantityInput.value = value - 1;
+                }
+            });
+            
+            increaseBtn.addEventListener('click', function() {
+                let value = parseInt(quantityInput.value);
+                if (value < 10) {
+                    quantityInput.value = value + 1;
+                }
+            });
+            
+            const addToCartBtn = document.getElementById('add-to-cart');
+            addToCartBtn.addEventListener('click', function() {
+                const quantity = quantityInput.value;
+                const productName = document.querySelector('.product-title').textContent;
+                const productPrice = document.querySelector('.product-price').textContent;
+                
+                alert(`Товар "${productName}" добавлен в корзину в количестве ${quantity} шт.`);
+                
+            });
+            
+            const favoriteBtn = document.getElementById('add-to-favorites');
+            favoriteBtn.addEventListener('click', function() {
+                const isFavorite = this.classList.toggle('active');
+                const icon = this.querySelector('img');
+                
+                if (isFavorite) {
+                    icon.src = 'Pictures/func/heart-filled.png'; 
+                    alert('Товар добавлен в избранное');
+                } else {
+                    icon.src = 'Pictures/func/heart.png';
+                    alert('Товар удалён из избранного');
+                }
+            });
+            
+            const burgerToggle = document.getElementById('burger-toggle');
+            const menuCloseOverlay = document.querySelector('.menu-close-overlay');
+            const mobileBackBtn = document.getElementById('mobile-back-btn');
+            
+            if (menuCloseOverlay) {
+                menuCloseOverlay.addEventListener('click', function() {
+                    burgerToggle.checked = false;
+                });
+            }
+            
+            if (mobileBackBtn) {
+                mobileBackBtn.addEventListener('click', function() {
+                    burgerToggle.checked = false;
+                });
+            }
+            
+            mobileBackBtn.addEventListener('click', function() {
+                window.history.back();
+            });
+        });
+    </script>
+    <script src="js/auth-validation.js"></script>
+</body>
+</html>

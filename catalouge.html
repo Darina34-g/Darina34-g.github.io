@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time for sweet</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="Pictures/Иконка.png">
+</head>
+
+<body>
+    <input type="checkbox" id="burger-toggle" class="burger-toggle">
+    <label for="burger-toggle" class="menu-close-overlay"></label>
+    
+    <header>
+        <div class="hat">
+            <img class="logo" src="Pictures/Иконка.png" alt="Логотип">
+            
+            <label for="burger-toggle" class="burger-btn">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </label>
+            
+            <nav class="desktop-nav">
+                <div class="nav-style">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="vacancy.html">Вакансии</a></li>
+                    <li><label for="auth-modal" class="open-modal">Вход</label></li>
+                </div>
+                <div class="nav-catalouge">
+                    <li><a href="catalouge.html#cakes">Торты</a></li>
+                    <li><a href="catalouge.html#pastries">Пирожные</a></li>
+                    <li><a href="catalouge.html#pies">Пироги</a></li>
+                    <li><a href="catalouge.html#cookies">Печенье</a></li>
+                    <li><a href="catalouge.html#drinks">Напитки</a></li>
+                </div>
+            </nav>
+            
+            <div class="header-icons">
+                <a href="bin.html"><img src="Pictures/func/Корзина.png" alt="Корзина" class="hat-marker"></a>
+                <a href="profile.html"><img src="Pictures/func/Профиль.png" alt="Профиль" class="hat-marker"></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="strelka-mobileback">
+        <button id="mobile-back-btn">
+            <img src="Pictures/func/Frame 106.svg" alt="Назад">
+        </button> 
+    </div>
+    
+    <div class="mobile-menu">
+        <div class="mobile-menu__content">
+            <div class="mobile-menu__section">
+                <h4 class="mobile-menu__title">Навигация</h4>
+                <ul class="mobile-menu__list">
+                    <li><a href="index.html" class="mobile-menu__link">Главная</a></li>
+                    <li><a href="about.html" class="mobile-menu__link">О нас</a></li>
+                    <li><a href="vacancy.html" class="mobile-menu__link">Вакансии</a></li>
+                    <li><a href="profile.html" class="mobile-menu__link">Профиль</a></li>
+                    <li><label for="auth-modal" class="mobile-menu__link open-modal">Вход</label></li>
+                    <li><a href="bin.html" class="mobile-menu__link">Корзина</a></li>
+                </ul>
+            </div>
+            <div class="mobile-menu__section">
+                <h4 class="mobile-menu__title">Каталог</h4>
+                <ul class="mobile-menu__list">
+                    <li><a href="catalouge.html#cakes" class="mobile-menu__link">Торты</a></li>
+                    <li><a href="catalouge.html#pastries" class="mobile-menu__link">Пирожные</a></li>
+                    <li><a href="catalouge.html#pies" class="mobile-menu__link">Пироги</a></li>
+                    <li><a href="catalouge.html#cookies" class="mobile-menu__link">Печенье</a></li>
+                    <li><a href="catalouge.html#drinks" class="mobile-menu__link">Напитки</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <a href="#top">
+            <img class="button-catalouge" src="Pictures/func/strelka.png" alt="Вверх">
+        </a>
+    <main class="main-content">
+        <div class="catalouge-main">
+            <section id="cakes" class="catalog-section">
+                <p class="section-title">Торты</p>
+                <div class="products-grid">
+                    <a href="pageitem.html" class="product-card-link">
+                        <div class="product-card">
+                            <div class="marka-hit">
+                                <img src="Pictures/Sweets/марка хит продаж.png" alt="хит продаж">
+                            </div>
+                            <img src="Pictures/Sweets/Звёздная мечта.png" alt="Торт Звёздная мечта" class="product-image">
+                            <div class="product-info">
+                                <div class="price-weight-catalouge">
+                                    <p class="product-price">2600 руб</p>
+                                    <p class="product-weight">2 кг</p>
+                                </div>
+                                <h3 class="product-title">Торт "Звёздная мечта"</h3>
+                                <button class="bin-btn" onclick="event.stopPropagation(); window.location.href='bin.html';">
+                                    <img src="Pictures/func/Корзина.png" alt="Корзина" class="bin">
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+
+                <div class="product-card">
+                    <img src="Pictures/Sweets/Цветочный.png" alt="Торт Цветочный" class="product-image">
+                    <div class="product-info">
+                        <div class="price-weight-catalouge">
+                            <p class="product-price">4000 руб</p>
+                            <p class="product-weight">4 кг</p>
+                        </div>
+                        <h3 class="product-title">Торт "Цветочный"</h3>
+                        <a href="bin.html"><img src="Pictures/func/Корзина.png" alt="Корзина" class="bin"></a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Pictures/Sweets/Нуар.png" alt="Торт Нуар" class="product-image">
+                    <div class="product-info">
+                        <div class="price-weight-catalouge">
+                            <p class="product-price">3100 руб</p>
+                            <p class="product-weight">2 кг</p>
+                        </div>
+                        <h3 class="product-title">Торт "Нуар"</h3>
+                        <a href="bin.html"><img src="Pictures/func/Корзина.png" alt="Корзина" class="bin"></a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="Pictures/Sweets/Красный бархат.png" alt="Торт Красный бархат" class="product-image">
+                    <div class="product-info">
+                        <div class="price-weight-catalouge">
+                            <p class="product-price">2600 руб</p>
+                            <p class="product-weight">2 кг</p>
+                        </div>
+                        <h3 class="product-title">Торт "Красный бархат"</h3>
+                        <a href="bin.html"><img src="Pictures/func/Корзина.png" alt="Корзина" class="bin"></a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="Pictures/Sweets/Морсая волна.png" alt="Морская волна" class="product-image">
+                    <div class="product-info">
+                        <div class="price-weight-catalouge">
+                            <p class="product-price">3000 руб</p>
+                            <p class="product-weight">1.8 кг</p>
+                        </div>
+                        <h3 class="product-title">Торт "Морская волна"</h3>
+                        <a href="bin.html"><img src="Pictures/func/Корзина.png" alt="Корзина" class="bin"></a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="Pictures/Sweets/Золотая лилия.png" alt="Золотая лилия" class="product-image">
+                    <div class="product-info">
+                        <div class="price-weight-catalouge">
+                            <p class="product-price">3900 руб</p>
+                            <p class="product-weight">3 кг</p>
+                        </div>
+                        <h3 class="product-title">Торт "Золотая лилия"</h3>
+                        <a href="bin.html"><img src="Pictures/func/Корзина.png" alt="Корзина" class="bin"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pastries" class="catalog-section">
+            <p class="section-title">Пирожные</p>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="marka-hit">
+                            <img src="Pictures/Sweets/марка хит продаж.png" alt="хит продаж">
+                        </div>
+                    <img src="Pictures/Sweets/Апельсин.png" alt="Пирожное Апельсин" class="product-image">
+                    <div class="product-info">
+                        <div class="price-weight-catalouge">
+                            <p class="product-price">410 руб</p>
+                            <p class="product-weight">300u г</p>
+                        </div>
+                        <h3 class="product-title">Пирожное "Апельсин"</h3>
+                        <a href="bin.html"><img src="Pictures/func/Корзина.png" alt="Корзина" class="bin"></a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Pictures/Sweets/Лимон-мята.png" alt="Пирожное Лимон-мята" class="product-image">
+                    <div class="product-info">
+                        <div class="price-weight-catalouge">
+                            <p class="product-price">180 руб</p>
+                            <p class="product-weight">300 г</p>
+                        </div>
+                        <h3 class="product-title">Пирожное "Лимон-мята"</h3>
+                        <a href="bin.html"><img src="Pictures/func/Корзина.png" alt="Корзина" class="bin"></a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="Pictures/Sweets/Шоколад.png" alt="Пирожное Шоколад" class="product-image">
+                    <div class="product-info">
+                        <div class="price-weight-catalouge">
+                            <p class="product-price">180 руб</p>
+                            <p class="product-weight">300 г</p>
+                        </div>
+                        <h3 class="product-title">Пирожное "Шоколад"</h3>
+                        <a href="bin.html"><img src="Pictures/func/Корзина.png" alt="Корзина" class="bin"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pies" class="catalog-section">
+            <p class="section-title">Пироги</p>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="Pictures/Sweets/Пирог с вишней.png" alt="Пирог с вишней" class="product-image">
+                    <div class="product-info">
+                        <div class="price-weight-catalouge">
+                            <p class="product-price">140 руб</p>
+                            <p class="product-weight">170 г</p>
+                        </div>
+                        <h3 class="product-title">Пирог с вишней</h3>
+                        <a href="bin.html"><img src="Pictures/func/Корзина.png" alt="Корзина" class="bin"></a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="Pictures/Sweets/Пирог с черникой.png" alt="Пирог с черникой" class="product-image">
+                    <div class="product-info">
+                        <div class="price-weight-catalouge">
+                            <p class="product-price">160 руб</p>
+                            <p class="product-weight">170 г</p>
+                        </div>
+                        <h3 class="product-title">Пирог с черникой</h3>
+                        <a href="bin.html"><img src="Pictures/func/Корзина.png" alt="Корзина" class="bin"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cookies" class="catalog-section">
+            <p class="section-title">Печенье</p>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="Pictures/Sweets/ПВесенний.png" alt="Набор печенья Весенний" class="product-image">
+                    <div class="product-info">
+                        <div class="price-weight-catalouge">
+                            <p class="product-price">799 руб</p>
+                            <p class="product-weight">650 г</p>
+                        </div>
+                        <h3 class="product-title">Набор печенья <br>"Весенний"</h3>
+                        <a href="http://"><img src="Pictures/func/Корзина.png" alt="Корзина" class="bin"></a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="Pictures/Sweets/ПСладкие символы.png" alt="Набор печенья Сладкие символы" class="product-image">
+                    <div class="product-info">
+                        <div class="price-weight-catalouge">
+                            <p class="product-price">799 руб</p>
+                            <p class="product-weight">650 г</p>
+                        </div>
+                        <h3 class="product-title">Набор печенья <br>"Сладкие символы"</h3>
+                        <a href="http://"><img src="Pictures/func/Корзина.png" alt="Корзина" class="bin"></a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="Pictures/Sweets/ПTFS.png" alt="Набор печенья Time for Sweet" class="product-image">
+                    <div class="product-info">
+                        <div class="price-weight-catalouge">
+                            <p class="product-price">799 руб</p>
+                            <p class="product-weight">650 г</p>
+                        </div>
+                        <h3 class="product-title">Набор печенья <br> "Time for Sweet"</h3>
+                        <a href="http://"><img src="Pictures/func/Корзина.png" alt="Корзина" class="bin"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="drinks" class="catalog-section">
+            <p class="section-title">Напитки</p>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="marka-hit">
+                        <img src="Pictures/Sweets/марка хит продаж.png" alt="хит продаж">
+                    </div>
+                    <img src="Pictures/Sweets/Клубничный фраппе.png" alt="Клубничный фраппе" class="product-image">
+                    <div class="product-info">
+                        <div class="price-weight-catalouge">
+                            <p class="product-price">400 руб</p>
+                            <p class="product-weight">100 г</p>
+                        </div>
+                        <h3 class="product-title">Клубничный Фраппе</h3>
+                        <a href="http://"><img src="Pictures/func/Корзина.png" alt="Корзина" class="bin"></a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="Pictures/Sweets/Матча-латте.png" alt="Матча-латте" class="product-image">
+                    <div class="product-info">
+                        <div class="price-weight-catalouge">
+                            <p class="product-price">210 руб</p>
+                            <p class="product-weight">300 г</p>
+                        </div>
+                        <h3 class="product-title">Матча-латте</h3>
+                        <a href="http://"><img src="Pictures/func/Корзина.png" alt="Корзина" class="bin"></a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="Pictures/Sweets/Лимонад грейпфрут.png" alt="Лимонад грейпфрут" class="product-image">
+                    <div class="product-info">
+                        <div class="price-weight-catalouge">
+                            <p class="product-price">150 руб</p>
+                            <p class="product-weight">300 г</p>
+                        </div>
+                        <h3 class="product-title">Лимонад грейпфрут</h3>
+                        <a href="http://"><img src="Pictures/func/Корзина.png" alt="Корзина" class="bin"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+        <footer>
+            <div class="footer">
+                <div class="nav-left">
+                    <nav class="footer-nav">
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="vacancy.html">Вакансии</a></li>
+                    </nav>
+                </div>
+                <div class="nav-right">
+                    <h4>Контакты</h4>
+                    <div class="contacts">
+                        <p class="text">+79104158123</p>
+                        <p class="text">tfsweet@gmail.com</p>
+                        <img src="Pictures/marker 1.png" alt="Метка">
+                        <p class="text">Санкт-Петербург, Невский проспект, 65</p>
+                    </div>
+                    <div class="footer-apps">
+                        <a href="http://"><img src="Pictures/apps/Vk.png" alt="Vk" class="footer-icons"></a>
+                        <a href="http://"><img src="Pictures/apps/Telegram.png" alt="Telegram" class="footer-icons"></a>
+                    </div>
+            </div>
+                <p class="footer-title">TIME for SWEET©2007 - 2025</p>
+            </div>
+
+    </main>
+    <input type="checkbox" id="auth-modal">
+        <div class="autorize-overlay">
+            <div class="autorize">
+                <label for="auth-modal" class="close-btn">
+                    <img src="Pictures/func/exit.png" alt="выход">
+                </label>
+                <div class="title-autorize">
+                    <p>Вход в аккаунт</p>
+                </div>
+                <form action="/test" method="get">
+                    <div>
+                        <div class="line-input">
+                            <label for="text" class="cell">Логин</label>
+                            <input type="text" placeholder="Введите логин" name="text" id="text">
+                        </div>
+                        <div class="line-input">
+                            <label for="password" class="cell">Пароль</label>
+                            <input type="password" placeholder="Введите пароль" name="password" id="password">
+                        </div>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" name="member" id="member">
+                        <label for="member">Запомнить меня</label>
+                    </div>
+                    <div>
+                        <button type="submit">Войти</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+</body>
+</html>
+
+</body>

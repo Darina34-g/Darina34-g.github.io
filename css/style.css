@@ -1,0 +1,3393 @@
+@font-face {
+    font-family: 'Geologica_Auto-Light';
+    src: url('/fonts/Geologica_Auto-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'LilitaOne-Regular';
+    src: url('/fonts/LilitaOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'FiraSansCondensed-Regular';
+    src: url('/fonts/FiraSansCondensed-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'LuckiestGuy-Regular';
+    src: url('/fonts/LuckiestGuy-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'HammersmithOne-Regular';
+    src: url('/fonts/HammersmithOne-Regular.ttf') format('truetype');
+}
+header {
+    background: linear-gradient(#FFD7D7, #FFF5EA);
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.hat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    width: 115px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-style {
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+    margin: 10px 0;
+    font-family: 'Geologica_Auto-Light';
+    cursor: pointer;
+}
+
+
+.nav-catalouge {
+    display: flex;
+    list-style: none;
+    font-size: 24px;
+    margin: 5px 0;
+    color: #FF516E;
+    font-family: 'FiraSansCondensed-Regular';
+}
+
+.nav-style li, .nav-catalouge li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.nav-style a{
+    /* text-decoration: none !important; */
+    color: #504F4F;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-catalouge a {
+    /* text-decoration: none !important; */
+    color: #FF516E;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-style a:hover {
+    color: #ff6b6b;
+}
+
+.nav-catalouge a:hover{
+    color: #504F4F;
+}
+
+
+.hat-marker {
+    width: 45px;
+    height: 45px;
+    margin-left: 15px;
+    transition: transform 0.3s;
+}
+
+.hat-marker:hover {
+    transform: scale(1.1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.catalog-section {
+    margin-bottom: 3rem;
+    scroll-margin-top: 20px; 
+}
+
+
+/*Главная*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.title-hits p{
+    font-size: 32px;
+    font-family:'Geologica_Auto-Light';
+    color: #504F4F
+}
+
+/* Баннер */
+.banner {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding: 0;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    display: block;
+}
+
+/* Хиты продаж */
+.hits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 40px 0 20px 0;
+    gap: 20px;
+}
+
+.border {
+    width: 200px; 
+    height: 4px; 
+    background-color: #ffdcdca3;
+    border-radius: 50% ; 
+    position: relative;
+}
+
+.border::before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: inherit;
+    border-radius: 50% / 100% 100% 0 0;
+    transform: scaleY(-1);
+}
+
+.hits h2 {
+    font-size: 32px;
+    color: #FF516E;
+    font-family: 'Geologica_Auto-Light';
+    text-align: center;
+    /* white-space: nowrap; */
+}
+
+.hit-sell {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+}
+
+.cart {
+    width: 100%;
+    max-width: 300px;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 5%;
+}
+
+.cart:hover {
+    box-shadow: 0 8px 25px rgba(255, 116, 116, 0.277);
+}
+
+.hits-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 26px;
+    margin-bottom: 20px;
+}
+
+.cart-info {
+    flex: 1;
+    text-align: left;
+}
+
+.price-weight-container {
+    display: flex;
+    align-items: baseline; 
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2B2B2B;
+    font-family: 'Geologica_Auto-Light';
+    margin: 0;
+}
+
+.weight {
+    font-size: 14px;
+    color: #888888;
+    font-family: 'Geologica_Auto-Light';
+    margin: 0;
+}
+
+.title, .name {
+    font-size: 18px;
+    color: #2B2B2B;
+    font-family: 'Geologica_Auto-Light';
+    margin: 0;
+}
+
+.cart-action {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.bin {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.2s;
+    cursor: pointer;
+    padding: 8px;
+    position: absolute;
+    right: 20px;
+    bottom: 50px;
+    
+}
+
+.bin:hover {
+    transform: scale(1.1);
+}
+
+/*"Готовим на заказ" */
+.order {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 60px 20px;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.man {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    flex: 1;
+    min-width: 410px;
+    max-width: 410px;
+}
+
+.text-order {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    font-family: 'Geologica_Auto-Light';
+}
+
+.text-order h2 {
+    font-size: 36px;
+    color: #FF516E;
+    font-family: 'Geologica_Auto-Light';
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.info-text {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #2B2B2B;
+}
+
+.info-text .text {
+    margin-bottom: 20px;
+}
+
+.text-calling {
+    font-weight: bold;
+    margin-top: 25px;
+    line-height: 1.8;
+}
+
+/*О нас*/
+
+.web-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.border {
+    width: 200px; 
+    height: 8px; 
+    background-color: #FFACAC;
+    border-radius: 50% / 100% 100% 0 0; 
+    position: relative;
+}
+
+.border::before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: inherit;
+    border-radius: 50% / 100% 100% 0 0;
+    transform: scaleY(-1);
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+    color: #FF516E;
+    font-family: 'LilitaOne-Regular';
+}
+
+/*Мини картиночке*/
+.info-about {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.begin-about {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #2B2B2B;
+    font-family: 'Geologica_Auto-Light';
+}
+
+.frases-about {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.frases-about div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.markers {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.mini-text {
+    font-size: 20px;
+    color: #2B2B2B;
+    font-family: 'Geologica_Auto-Light';
+}
+
+/*Торт и текст*/
+
+.aboutus-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto 40px;
+    padding: 0 20px;
+}
+
+.info-img{
+    width: 300px;
+    height: auto;
+    margin-right: 40px;
+}
+
+.text-info{
+    font-size: 18px;
+    line-height: 30px;
+    font-family: 'Geologica_Auto-Light';
+    color:#2B2B2B !important;
+}
+
+/*Карусель изображений*/
+
+.about-pictures{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.galery{
+    max-height: 350px;
+    width: auto;
+    margin: 0 7px;
+}
+
+.button-galery {
+    cursor: pointer;
+    transition: transform 0.3s;
+    position: relative;
+    z-index: 2;
+    margin: 0 -30px; 
+}
+
+.button-galery:hover {
+    transform: scale(1.1);
+}
+
+.about-pictures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0; 
+    margin-bottom: 40px;
+}
+
+.galery {
+    max-height: 350px;
+    width: auto;
+    position: relative;
+    z-index: 1;
+}
+
+#carouselExampleInterval{
+    max-width: 710px;
+    margin: 40px auto;
+    border-radius: 43px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(255, 81, 110, 0.4);
+}
+
+#aboutCarousel .carousel-inner{
+    border-radius: 15px;
+}
+
+#aboutCarousel .carousel-item img{
+    height: 350px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/*Футер*/
+
+footer {
+    background: linear-gradient(#FFF5EA, #FFD7D7);
+    padding: 30px 0 15px;
+    position: relative;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+.nav-left {
+    display: flex;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 10px;
+    font-size: 24px;
+    font-family: 'Geologica_Auto-Light';
+}
+
+.footer-nav li {
+    list-style: none;
+}
+
+.footer-nav a {
+    /* text-decoration: none !important; */
+    color: #2B2B2B;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: #ff6b6b;
+}
+
+.nav-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.nav-right h4 {
+    font-size: 20px;
+    color: #FF516E;
+    margin-bottom: 10px;
+    font-family: 'Geologica_Auto-Light';
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.contacts .text {
+    font-size: 16px;
+    color: #2B2B2B;
+    font-family: 'Geologica_Auto-Light';
+    margin: 0;
+}
+
+.contacts div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.contacts img {
+    width: 16px;
+    height: 16px;
+}
+
+.footer-apps {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-icons {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s;
+}
+
+.footer-icons:hover {
+    transform: scale(1.1);
+}
+
+.footer-title {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #504F4F;
+    font-family: 'Geologica_Auto-Light';
+    margin: 0;
+    white-space: nowrap;
+}
+
+.metka {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+/*Авторизация*/
+
+.autorize {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    width: 400px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.title-autorize p{
+    font-size: 32px;
+    color: #FF516E;
+}
+
+.autorize-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 199, 199, 0.247);
+    backdrop-filter: blur(4px);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+#auth-modal {
+    display: none;
+}
+
+#auth-modal:checked ~ .autorize-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+#auth-modal:checked ~ .autorize-overlay .autorize {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.open-modal {
+    color: #504F4F;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-family: 'Geologica_Auto-Light';
+    font-size: 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    display: inline;
+}
+
+.open-modal:hover {
+    color: #ff6b6b;
+}
+
+.title-autorize{
+    text-align: center;
+    color: #FF516E;
+    font-family: 'Geologica_Auto-Light';
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.line-input {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.line-input label {
+    display: block;
+    margin-bottom: 8px;
+    color: #D09999;
+    font-family: 'Geologica_Auto-Light';
+    font-size: 20px;
+}
+
+.line-input input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #FFACAC;
+    border-radius: 10px;
+    background: white;
+    font-size: 16px;
+    font-family: 'Geologica_Auto-Light';
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-sizing: border-box;
+}
+
+.line-input input:focus {
+    outline: none;
+    border-color: #FF516E;
+    box-shadow: 0 0 0 3px rgba(255, 81, 110, 0.1);
+}
+
+.line-input input::placeholder {
+    color: #ccc;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    gap: 10px;
+}
+
+.check label {
+    color: #D09999;
+    font-family: 'Geologica_Auto-Light';
+    font-size: 14px;
+    order: 2;
+}
+
+.check input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #FF516E;
+    order: 1;
+}
+
+.autorize button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(45deg, #FF516E, #FF8E9D);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: 'Geologica_Auto-Light';
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.autorize button[type="submit"]:hover {
+    transform: translateY(-1px);
+}
+
+.autorize button[type="submit"]:active {
+    transform: translateY(0);
+}
+
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+}
+
+.close-btn:hover {
+    background-color: transparent;
+    transform: scale(1.1);
+}
+
+.close-btn img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+#auth-modal {
+    display: none;
+}
+
+#auth-modal:checked ~ .autorize-overlay {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#auth-modal:checked ~ .autorize-overlay .autorize {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.autorize-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 199, 199, 0.247);
+    backdrop-filter: blur(4px);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+#auth-modal:checked ~ .autorize-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+#auth-modal:checked ~ .autorize-overlay .autorize {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+/*Каталог*/
+
+body {
+    font-family: 'Geologica_Auto-Light';
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Основной контент */
+.catalouge-main{
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.catalog-section {
+    margin-bottom: 3rem;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+#pies .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+    gap: 20px;
+    justify-content: center;
+}
+
+.section-title {
+    text-align: center;
+    font-family: 'Geologica_Auto-Light';
+    font-size: 32px;
+    color: #FF516E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0 30px 0;
+    position: relative;
+}
+
+.section-title::before,
+.section-title::after {
+    content: '';
+    flex: 1;
+    height: 4px;
+    background-color: #ffdcdca3;
+    border-radius: 2px;
+    margin: 0 20px;
+}
+
+.section-title::before {
+    margin-right: 20px;
+}
+
+.section-title::after {
+    margin-left: 20px;
+}
+
+/* Товар */
+.product-card {
+    width: 100%;
+    max-width: 300px;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 5%;
+}
+
+.product-card-link {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card-link:hover {
+    transform: translateY(-5px);
+}
+
+.product-card-link:hover .product-card {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.product-card-link .bin-link {
+    position: relative;
+    z-index: 10; 
+    pointer-events: auto; 
+}
+
+.product-card-link:hover {
+    cursor: pointer;
+}
+
+
+.product-card:hover {
+    box-shadow: 0 8px 25px rgba(255, 116, 116, 0.277);
+}
+
+.button-catalouge {
+    position: fixed;
+    bottom: 80px;
+    right: 80px;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    z-index: 1000;
+    transform: rotate(-270deg);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    background: rgba(255, 215, 215, 0.8);
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 15px rgba(255, 81, 110, 0.3);
+}
+
+.button-catalouge:hover {
+    background: rgba(255, 215, 215, 1);
+}
+
+.button-catalouge {
+    opacity: 0.8;
+}
+
+.button-catalouge:hover {
+    opacity: 1;
+}
+
+.product-image{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 26px;
+    margin-bottom: 20px;
+}
+
+.product-info{
+    flex: 1;
+    text-align: left;
+}
+
+.price-weight-catalouge {
+    display: flex;
+    align-items: baseline; 
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.product-price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2B2B2B;
+    font-family: 'Geologica_Auto-Light';
+    margin: 0;
+}
+
+.product-weight {
+    font-size: 14px;
+    color: #888888;
+    font-family: 'Geologica_Auto-Light';
+    margin: 0;
+}
+
+.product-card:hover {
+    box-shadow: 0 8px 25px rgba(255, 116, 116, 0.277);
+}
+
+.product-title, .name {
+    font-size: 18px;
+    color: #2B2B2B;
+    font-family: 'Geologica_Auto-Light';
+    margin: 0;
+}
+
+.marka-hit {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+}
+
+.marka-hit img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.product-card {
+    position: relative;
+}
+
+/* Адаптив */
+@media (max-width: 320px) {
+
+    .main-content {
+        padding: 0 1rem;
+        margin: 1rem auto;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+    }
+
+    .product-card {
+        max-width: 100%;
+        padding: 15px;
+        margin: 0 auto;
+    }
+
+    .product-image {
+        height: 250px;
+    }
+
+    .bin{
+            width: 56px;
+            height: 56px;
+            transition: transform 0.2s;
+            cursor: pointer;
+            padding: 8px;
+            position: absolute;
+            right:20px;
+            bottom: 50px;
+    }
+
+
+    .section-title {
+        font-size: 28px;
+        margin: 30px 0 20px 0;
+    }
+
+    .section-title::before,
+    .section-title::after {
+        margin: 0 15px;
+        height: 3px;
+    }
+
+
+    .button-catalouge {
+        bottom: 40px;
+        right: 40px;
+        width: 60px;
+        height: 60px;
+    }
+    .autorize {
+        width: 90%;
+        max-width: 350px;
+        padding: 30px 20px;
+    }
+
+    .marka-hit img {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 2;
+        
+    }
+
+    /* "О нас" */
+
+    main {
+        padding: 0 1rem;
+    }
+
+    .web-title {
+        flex-direction: column;
+        gap: 15px;
+        margin: 20px 0;
+    }
+
+    .web-title h1 {
+        font-size: 36px;
+        order: -1;
+    }
+
+    .border {
+        width: 150px;
+        height: 6px;
+    }
+
+    .begin-about {
+        font-size: 20px;
+        margin-bottom: 20px;
+        padding: 0 10px;
+    }
+
+    .frases-about {
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 10px;
+    }
+
+    .frases-about div {
+        margin-bottom: 10px;
+    }
+
+    .mini-text {
+        font-size: 18px;
+    }
+
+    .markers {
+        width: 35px;
+        height: 35px;
+    }
+
+    .aboutus-info {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 15px;
+        margin-bottom: 30px;
+        color: #2B2B2B !important;
+    }
+
+    .info-img {
+        width: 250px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    #text-info {
+        color: #2B2B2B !important;
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: center;
+    }
+
+    .about-pictures {
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+
+    .galery {
+        max-height: 250px;
+        max-width: 100%;
+    }
+
+    .button-galery {
+        width: 40px;
+        height: 40px;
+        margin: 0;
+    }
+    .about-pictures div:first-child,
+    .about-pictures div:last-child {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .aboutus-info {
+        max-width: 90%;
+        padding: 0 30px;
+    }
+
+    .info-img {
+        width: 250px;
+    }
+
+    .text-info {
+        font-size: 17px;
+    }
+
+    .galery {
+        max-height: 300px;
+    }
+
+    .begin-about {
+        font-size: 22px;
+    }
+
+}
+
+        :root {
+            --primary-color: #FF516E;
+            --secondary-color: #FFF5EA;
+            --accent-color: #FFD7D7;
+        }
+        
+        .cart-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .product-image-bin {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+        
+        .quantity-control {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .quantity-btn {
+            padding: 0;
+            border: none;
+            font: inherit;
+            color: inherit;
+            background-color: transparent;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            list-style: none;
+        }
+        
+        .quantity-btn:hover {
+            transform: scale(1.1);
+        }
+        
+        .quantity-input {
+            width: 50px;
+            text-align: center;
+            border: 2px solid var(--accent-color);
+            border-radius: 10px;
+            padding: 5px;
+            font-family: 'Geologica_Auto-Light';
+            font-size: 16px;
+        }
+        
+        .quantity-input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+        
+        
+        .quantity-input[type=number] {
+            -moz-appearance: textfield;
+        }
+        
+        .section-title-bin {
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-color);
+            font-family: 'Geologica_Auto-Light';
+        }
+        
+        .form-check-input:checked {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .form-check-label {
+            font-family: 'Geologica_Auto-Light';
+        }
+        
+        .btn-primary {
+            background: linear-gradient(45deg, var(--primary-color), #FF8E9D);
+            border: none;
+            padding: 10px 25px;
+            font-size: 1rem;
+            border-radius: 21px;
+            font-family: 'Geologica_Auto-Light';
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(45deg, #e04a65, #e57f8d);
+            transform: translateY(-1px);
+            
+        }
+
+        .btn-comment {
+            background: linear-gradient(#FFACAC);
+            border: none;
+            padding: 8px 20px;
+            font-size: 0.9rem;
+            border-radius: 21px;
+            color: white;
+            font-family: 'Geologica_Auto-Light';
+        }
+        
+        .btn-comment:hover {
+            background: linear-gradient(45deg, #e04a65, #e57f8d);
+            transform: scale(1.1);
+            transition: all 0.3s ease;
+            color: white;
+        }
+        
+        .comment-textarea {
+            border: 2px solid var(--accent-color);
+            border-radius: 10px;
+            padding: 15px;
+            resize: vertical;
+            min-height: 100px;
+            margin-bottom: 15px;
+            font-family: 'Geologica_Auto-Light';
+        }
+        
+        .comment-textarea:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.2rem rgba(255, 81, 110, 0.25);
+        }
+        
+        footer {
+            background: linear-gradient(var(--secondary-color), var(--accent-color));
+            margin-top: 3rem;
+            padding: 2rem 0 1rem;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Geologica_Auto-Light';
+        }
+        
+        table, th, td {
+            font-family: 'Geologica_Auto-Light';
+        }
+        
+        .form-label {
+            font-family: 'Geologica_Auto-Light';
+        }
+        
+        @media (max-width: 768px) {
+            .product-image {
+                width: 60px;
+                height: 60px;
+            }
+            
+            .mobile-hidden {
+                display: none;
+            }
+            
+            .section-title-bin {
+                font-size: 1.3rem;
+            }
+            
+            .cart-container {
+                padding: 0 15px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .btn-primary {
+                width: 100%;
+                margin-top: 1rem;
+            }
+        }
+        /* Адаптив */
+        @media (max-width: 320px) {
+            .footer {
+                flex-direction: column;
+                padding: 20px 15px 70px 15px;
+                gap: 25px;
+            }
+            
+            .footer-nav {
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 15px;
+                justify-content: center;
+                width: 100%;
+            }
+            
+            .footer-nav li {
+                margin-right: 15px;
+                margin-bottom: 5px;
+            }
+            
+            .footer-nav li:last-child {
+                margin-right: 0;
+            }
+            
+            .nav-right h4 {
+                font-size: 18px;
+                margin-bottom: 15px;
+                text-align: center;
+                width: 100%;
+            }
+            
+            .contacts {
+                margin-bottom: 20px;
+                align-items: center;
+            }
+            
+            .contacts .text {
+                font-size: 14px;
+                line-height: 1.5;
+                margin-bottom: 5px;
+                text-align: center;
+            }
+            
+            .metka {
+                width: 20px;
+                height: 20px;
+                margin-right: 8px;
+                vertical-align: middle;
+            }
+            
+            .footer-apps {
+                justify-content: center;
+                gap: 15px;
+                width: 100%;
+            }
+            
+            .footer-icons {
+                width: 32px;
+                height: 32px;
+            }
+            
+            .footer-title {
+                position: absolute;
+                text-align: center;
+                font-size: 12px;
+                padding: 0 15px;
+                width: 100%;
+                left: 0;
+                transform: translateX(0);
+            }
+            
+            .contacts p:last-child {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 8px;
+                text-align: center;
+                flex-wrap: wrap;
+            }
+            
+            .contacts p:last-child .metka {
+                margin-right: 10px;
+                flex-shrink: 0;
+            }
+        }
+
+
+        .vacancy-hero {
+            margin: 40px 0 60px;
+        }
+        
+        .vacancy-hero__title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 0 20px;
+        }
+        
+        .vacancy-hero__heading {
+            font-size: 36px;
+            font-family: 'Geologica_Auto-Light';
+            color: #FF516E;
+            text-align: center;
+            white-space: nowrap;
+            font-weight: normal;
+            margin: 0;
+        }
+        
+        .border--decorative {
+            width: 200px;
+            height: 4px;
+            background-color: #ffdcdca3;
+            border-radius: 50%;
+            position: relative;
+        }
+        
+        .border--decorative::before {
+            content: '';
+            position: absolute;
+            top: 4px;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: inherit;
+            border-radius: 50% / 100% 100% 0 0;
+            transform: scaleY(-1);
+        }
+        
+        .vacancy-cards {
+            padding: 0 20px 80px;
+        }
+        
+        .vacancy-cards__container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+        
+        .vacancy-card {
+            position: relative;
+            width: 350px;
+            max-width: 380px;
+            height: 480px;
+            border-radius: 26px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(255, 116, 116, 0.277);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+        }
+        
+        .vacancy-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(255, 81, 110, 0.4);
+        }
+        
+        .vacancy-card__image-wrapper {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .vacancy-card__image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.95);
+        }
+        
+        .vacancy-card:hover .vacancy-card__image {
+            filter: blur(8px);
+            transform: scale(1.1);
+        }
+        
+        .vacancy-card__overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #ffdfdf;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            visibility: hidden;
+            text-align: center;
+        }
+        
+        .vacancy-card:hover .vacancy-card__overlay {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .vacancy-card__content {
+            width: 100%;
+            max-height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .vacancy-card__title {
+            font-size: 28px;
+            color: #FF516E;
+            font-family: 'Geologica_Auto-Light';
+            margin-bottom: 25px;
+            font-weight: bold;
+            text-align: center;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .vacancy-card__title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 2px;
+            background: #FF516E;
+            border-radius: 1px;
+        }
+
+        .vacancy-card__details {
+            margin-bottom: 30px;
+            width: 100%;
+        }
+        
+        .vacancy-card__detail {
+            font-size: 16px;
+            color: #e04a65;
+            font-family: 'Geologica_Auto-Light';
+            line-height: 1.6;
+            margin: 12px 0;
+            padding-bottom: 12px;
+            border-bottom: 1px solid rgba(255, 81, 110, 0.2);
+            text-align: left;
+        }
+        
+        .vacancy-card__detail:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        
+        .vacancy-card__more-details {
+            color: #504F4F;
+            font-weight: bold;
+        }
+        
+        
+        @media (max-width: 768px) {
+            .vacancy-hero__title {
+                flex-direction: column;
+                gap: 20px;
+                margin: 30px auto;
+            }
+            
+            .vacancy-hero__heading {
+                font-size: 36px;
+                white-space: normal;
+                padding: 0 20px;
+                order: -1;
+            }
+            
+            .border--decorative {
+                width: 150px;
+            }
+            
+            .vacancy-cards__container {
+                gap: 25px;
+                padding: 0 15px;
+            }
+            
+            .vacancy-card {
+                max-width: 320px;
+                height: 400px;
+            }
+            
+            .vacancy-card__overlay {
+                padding: 20px;
+            }
+            
+            .vacancy-card__title {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            
+            .vacancy-card__detail {
+                font-size: 14px;
+                margin: 10px 0;
+                padding-bottom: 10px;
+            }
+            
+            .vacancy-card__button {
+                padding: 12px 25px;
+                font-size: 16px;
+                max-width: 200px;
+            }
+        }
+        
+        @media (max-width: 320px) {
+            .vacancy-hero__heading {
+                font-size: 30px;
+            }
+            
+            .vacancy-card {
+                max-width: 100%;
+                height: 380px;
+            }
+            
+            .vacancy-cards__container {
+                gap: 20px;
+            }
+            
+            .vacancy-card__title {
+                font-size: 22px;
+            }
+            
+            .vacancy-card__detail {
+                font-size: 13px;
+            }
+            
+            .vacancy-card__button {
+                font-size: 15px;
+                padding: 10px 20px;
+            }
+        }
+        
+        .title-vac{
+            text-align: center;
+            margin: 60px 0 40px;
+            width: 100%;
+        }    
+
+        .title-vac h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .title-vac .border{
+            width: 200px;
+            margin: 0 auto;
+        }
+
+        .card-group-vacancy{
+            display: flex;
+            justify-content: center;
+            overflow-x: auto ;
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto 60px;
+            padding: 0 20px;
+            width: 100%;
+        }
+
+        .card-vacancy{
+            text-align: center;
+            width: 280px;
+            height: 320px;
+        }
+
+        .vacancy-info{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .vacancy-info h3,
+        .vacancy-info p{
+            text-align: center;
+            width: 100%;
+        }
+        
+
+        #sweetAlert {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .alert-box {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 400px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            border: 3px solid #ffd1dc;
+        }
+        
+        .alert-icon {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #e91e63;
+        }
+        
+        .alert-title {
+            margin: 0 0 15px 0;
+            color: #ff3c60;
+            font-size: 20px;
+        }
+        
+        .alert-message {
+            color: #666;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+        
+        .alert-btn {
+            background-color:#ff748e;
+            border: none;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+        
+        .alert-btn:hover {
+            transform: scale(1.05);
+        }
+ 
+.desktop-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#burger-toggle {
+    display: none;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.burger-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10001;
+    padding: 0;
+    position: relative;
+    pointer-events: auto !important;
+}
+
+.burger-line {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #FF516E;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background-color: #fff5f5;
+    box-shadow: -5px 0 25px rgba(255, 81, 110, 0.3);
+    z-index: 9998;
+    transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow-y: auto;
+    padding: 80px 20px 40px;
+    display: none; 
+}
+
+.menu-close-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9997;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: none; 
+}
+
+.strelka-mobileback {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10002;
+    cursor: pointer;
+}
+
+.strelka-mobileback button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.strelka-mobileback button img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.strelka-mobileback button:hover {
+    transform: scale(1.1);
+}
+
+#burger-toggle:checked ~ .mobile-menu {
+    right: 0;
+}
+
+#burger-toggle:checked ~ .menu-close-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+#burger-toggle:checked ~ .strelka-mobileback {
+    display: block;
+}
+
+#burger-toggle:checked ~ body {
+    overflow: hidden;
+}
+
+#burger-toggle:checked ~ header .burger-btn .burger-line:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+#burger-toggle:checked ~ header .burger-btn .burger-line:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+
+.mobile-menu__content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.mobile-menu__section {
+    width: 100%;
+    animation: slideIn 0.4s ease forwards;
+    opacity: 0;
+    transform: translateX(20px);
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#burger-toggle:checked ~ .mobile-menu .mobile-menu__section:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+#burger-toggle:checked ~ .mobile-menu .mobile-menu__section:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.mobile-menu__title {
+    color: #ff3856;
+    font-size: 18px;
+    font-family: 'Geologica_Auto-Light';
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(255, 81, 110, 0.4);
+    text-align: center;
+}
+
+.mobile-menu__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-menu__list li {
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-menu__link {
+    display: block;
+    color: #505050;
+    font-size: 16px;
+    font-family: 'Geologica_Auto-Light';
+    padding: 12px 15px;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 81, 110, 0.2);
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    margin-bottom: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.mobile-menu__link:hover {
+    color: #FF516E;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateX(5px);
+}
+
+.mobile-menu__link::before {
+    position: absolute;
+    left: 0;
+    color: #FF516E;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.mobile-menu__link:hover::before {
+    opacity: 1;
+}
+
+.mobile-menu__link.open-modal {
+    cursor: pointer;
+}
+
+@media (max-width: 320px) {
+    .desktop-nav {
+        display: none !important;
+    }
+    
+    .burger-btn {
+        display: flex !important;
+        order: 3; 
+        margin-left: auto; 
+        margin-right: 0;
+    }
+    
+    .header-icons {
+        display: none !important;
+    }
+    
+    .mobile-menu {
+        display: block;
+        width: 280px;
+        max-width: 100%;
+        padding: 80px 15px 30px;
+    }
+    
+    .menu-close-overlay {
+        display: block;
+    }
+    
+    .hat {
+        padding: 10px 15px !important;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .logo {
+        width: 80px !important;
+        order: 1;
+        margin-right: auto; 
+    }
+    
+    .burger-btn {
+        margin-left: auto;
+        margin-right: 0;
+    }
+    
+    .hat-marker {
+        width: 32px !important;
+        height: 32px !important;
+        margin-left: 0;
+    }
+    
+    #burger-toggle:checked ~ header .header-icons {
+        display: none !important;
+    }
+    
+    #burger-toggle:checked ~ header .burger-btn {
+        opacity: 1 !important;
+        visibility: visible !important;
+        pointer-events: auto !important;
+        z-index: 10004 !important;
+        position: relative;
+        right: 0;
+    }
+}
+
+@media (min-width: 321px) {
+    .burger-btn {
+        display: none !important;
+    }
+    
+    .mobile-menu {
+        display: none !important;
+    }
+    
+    .menu-close-overlay {
+        display: none !important;
+    }
+    
+    .strelka-mobileback {
+        display: none !important;
+    }
+    
+    .desktop-nav {
+        display: flex !important;
+    }
+    
+    .header-icons {
+        display: flex !important;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+    .hat {
+        padding: 10px 15px !important;
+    }
+    
+    .logo {
+        width: 90px !important;
+    }
+    
+    .nav-style {
+        font-size: 18px;
+    }
+    
+    .nav-catalouge {
+        font-size: 20px;
+    }
+    
+    .nav-style li, .nav-catalouge li {
+        margin: 0 10px;
+    }
+    
+    .hat-marker {
+        width: 38px !important;
+        height: 38px !important;
+    }
+    
+    .header-icons {
+        display: flex !important;
+        gap: 10px;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+    .nav-style {
+        font-size: 16px;
+    }
+    
+    .nav-catalouge {
+        font-size: 18px;
+    }
+    
+    .nav-style li, .nav-catalouge li {
+        margin: 0 8px;
+    }
+    
+    .logo {
+        width: 85px !important;
+    }
+}
+
+
+header {
+    position: relative;
+    z-index: 1000;
+}
+
+.mobile-menu * {
+    pointer-events: auto !important;
+}
+
+@media (max-width: 320px) {
+    #burger-toggle:checked ~ .strelka-mobileback {
+        display: block !important;
+    }
+}
+
+@media (min-width: 321px) {
+    #burger-toggle:checked ~ .strelka-mobileback {
+        display: none !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .header-icons {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+    }
+}
+
+.hat {
+    position: relative;
+}
+
+@media (max-width: 320px) {
+    .hat {
+        justify-content: space-between;
+    }
+    
+    .logo {
+        flex-shrink: 0;
+    }
+    
+    .burger-btn {
+        flex-shrink: 0;
+    }
+}
+
+.product-page-itempage {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    font-family: 'Geologica_Auto-Light';
+}
+
+.product-container-itempage {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.product-gallery-itempage {
+    width: 40%;
+    max-width: 500px;
+    margin-right: 40px;
+}
+
+.product-main-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1; 
+    object-fit: cover; 
+    border-radius: 45px;
+    box-shadow: 0 4px 15px rgba(255, 110, 110, 0.25);
+}
+
+@media (max-width: 1024px) {
+    .product-gallery-itempage {
+        width: 45%;
+        max-width: 400px;
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-gallery-itempage {
+        width: 100%;
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .product-main-image {
+        max-width: 100%;
+        max-height: 400px;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-gallery-itempage {
+        width: 100%;
+    }
+    
+    .product-main-image {
+        max-height: 350px;
+    }
+}
+
+@media (max-width: 360px) {
+    .product-main-image {
+        max-height: 300px;
+    }
+}
+.product-thumbnails {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.thumbnail {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.thumbnail:hover,
+.thumbnail.active {
+    border-color: #FF516E;
+    transform: scale(1.05);
+}
+
+.product-info-itempage {
+    flex: 1;
+    min-width: 300px;
+}
+
+.product-title-itempage {
+    font-size: 28px; 
+    font-family: 'Geologica_Auto-Light';
+    color: #fd6881;
+    margin: 10px 0 15px 0;
+    line-height: 1.3;
+}
+
+@media (max-width: 1024px) {
+    .product-title-itempage {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-title-itempage {
+        font-size: 24px;
+        margin: 8px 0 12px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-title-itempage {
+        font-size: 22px;
+        margin: 6px 0 10px 0;
+    }
+}
+
+@media (max-width: 360px) {
+    .product-title-itempage {
+        font-size: 20px;
+    }
+}
+.product-category-itempage {
+    display: inline-block;
+    background: linear-gradient(45deg, #FFD7D7, #FFF5EA);
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: #504F4F;
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-family: 'FiraSansCondensed-Regular';
+}
+
+
+.product-price-container {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.product-price-itempage {
+    font-size: 32px;
+    color: #2B2B2B;
+    font-weight: bold;
+    font-family: 'Geologica_Auto-Light';
+}
+
+.product-weight-itempage {
+    font-size: 18px;
+    color: #888888;
+    font-family: 'Geologica_Auto-Light';
+}
+
+.add-to-cart-btn {
+    display: inline-block;
+    margin-left: auto;
+    padding: 15px 30px;
+    min-width: 200px;
+    background-color: #fd6881; 
+    color: white;
+    border: none;
+    border-radius: 43px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #e04a65; 
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 8px rgba(255, 105, 180, 0.3);
+}
+
+.add-to-cart-btn:active {
+    transform: translateY(0); 
+    background-color: #ffa4a4; 
+}
+
+.product-actions {
+    display: flex;
+    gap: 20px; 
+    justify-content: flex-end;
+    margin-top: 25px;
+    width: 100%;
+    flex-wrap: wrap; 
+}
+
+.add-to-cart-btn,
+.back-to-catalog-btn {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 43px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-to-cart-btn {
+    min-width: 200px;
+    background-color: #FF516E;
+    color: white;
+    box-shadow: 0 4px 6px rgba(255, 105, 180, 0.2);
+}
+
+.back-to-catalog-btn {
+    min-width: 180px; 
+    background-color: white;
+    color:#FF516E;
+    border: 2px solid #FF516E; 
+    font-size: 15px; 
+}
+
+.add-to-cart-btn:hover {
+    background-color: #FF516E;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255, 105, 180, 0.3);
+}
+
+.back-to-catalog-btn:hover {
+    background-color: #FFF0F5; 
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255, 105, 180, 0.2);
+}
+
+.add-to-cart-btn:active {
+    transform: translateY(0);
+    background-color: #ff8686;
+    box-shadow: 0 2px 4px rgba(255, 105, 180, 0.2);
+}
+
+.back-to-catalog-btn:active {
+    transform: translateY(0);
+    background-color: #FFE4E1; 
+    box-shadow: 0 2px 4px rgba(255, 105, 180, 0.1);
+}
+
+@media (max-width: 1024px) {
+    .product-actions {
+        gap: 15px;
+    }
+    
+    .add-to-cart-btn {
+        padding: 14px 28px;
+        min-width: 180px;
+        font-size: 15px;
+        border-radius: 40px;
+    }
+    
+    .back-to-catalog-btn {
+        padding: 14px 28px;
+        min-width: 160px;
+        font-size: 14px;
+        border-radius: 40px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .product-actions {
+        flex-direction: column-reverse; 
+        gap: 15px;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    
+    .add-to-cart-btn,
+    .back-to-catalog-btn {
+        padding: 14px 25px;
+        width: 100%;
+        max-width: 100%;
+        min-width: auto;
+        font-size: 15px;
+        border-radius: 35px;
+    }
+    
+    .add-to-cart-btn {
+        order: 2; 
+    }
+    
+    .back-to-catalog-btn {
+        order: 1; 
+    }
+}
+
+@media (max-width: 480px) {
+    .product-actions {
+        gap: 12px;
+    }
+    
+    .add-to-cart-btn,
+    .back-to-catalog-btn {
+        padding: 13px 20px;
+        font-size: 14px;
+        border-radius: 30px;
+    }
+}
+
+@media (max-width: 320px) {
+    .add-to-cart-btn,
+    .back-to-catalog-btn {
+        padding: 12px 16px;
+        font-size: 13px;
+        border-radius: 25px;
+    }
+}
+
+
+@media (max-width: 320px) {
+    .product-actions {
+        gap: 10px;
+    }
+}
+
+/* Стили для страницы профиля */
+
+.profile-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    font-family: 'Geologica_Auto-Light';
+}
+
+.profile-container {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(255, 81, 110, 0.1);
+    overflow: hidden;
+}
+
+.profile-header {
+    background: linear-gradient(135deg, #FFF5EA, #FFD7D7);
+    padding: 40px;
+    position: relative;
+}
+
+.profile-avatar-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 25px;
+}
+
+.profile-avatar-wrapper {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+.profile-avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-edit {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 36px;
+    height: 36px;
+    background: #FF516E;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.avatar-edit:hover {
+    transform: scale(1.1);
+}
+
+.edit-icon {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
+
+.profile-name-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profile-name {
+    font-size: 36px;
+    color: #FF516E;
+    margin: 0;
+    font-family: 'Geologica_Auto-Light';
+}
+
+.profile-balance {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    color: #2B2B2B;
+    background: white;
+    padding: 8px 20px;
+    border-radius: 25px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+}
+
+.balance-icon {
+    font-size: 28px;
+}
+
+.balance-amount {
+    font-weight: bold;
+    font-family: 'Geologica_Auto-Light';
+}
+
+.profile-contact-info {
+    background: white;
+    padding: 20px 25px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-label {
+    font-size: 16px;
+    color: #888888;
+    font-family: 'Geologica_Auto-Light';
+}
+
+.contact-value {
+    font-size: 18px;
+    color: #2B2B2B;
+    font-weight: bold;
+    font-family: 'Geologica_Auto-Light';
+}
+
+.logout-btn {
+    padding: 12px 40px;
+    background: linear-gradient(45deg, #FF516E, #FF8E9D);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-family: 'Geologica_Auto-Light';
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.logout-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 81, 110, 0.3);
+}
+
+.profile-sections {
+    padding: 40px;
+}
+
+.section-title-profile {
+    font-size: 28px;
+    color: #FF516E;
+    margin-bottom: 25px;
+    font-family: 'Geologica_Auto-Light';
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.section-title-profile::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #FF516E, #FFACAC);
+    border-radius: 2px;
+}
+
+.orders-section {
+    margin-bottom: 40px;
+}
+
+.orders-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.order-item {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 25px;
+    border: 1px solid #ff516e;
+    transition: transform 0.3s;
+}
+
+.order-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 81, 110, 0.1);
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.order-date {
+    font-size: 16px;
+    color: #504F4F;
+    font-weight: bold;
+}
+
+
+.order-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.order-items {
+    font-size: 16px;
+    color: #2B2B2B;
+    flex: 1;
+    min-width: 200px;
+}
+
+.order-total {
+    font-size: 20px;
+    color: #FF516E;
+    font-weight: bold;
+}
+
+.order-actions {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+.order-rate-btn {
+    background: linear-gradient(45deg, #FF516E, #FF8E9D);
+    color: white;
+}
+
+.order-details-btn {
+    background: transparent;
+    color: #FF516E;
+    border: 2px solid #FFACAC;
+}
+
+.order-rate-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(255, 81, 110, 0.2);
+}
+
+.order-details-btn:hover {
+    background: #FFD7D7;
+    border-color: #FF516E;
+}
+
+.order-details-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease;
+}
+
+.order-details-content {
+    background: white;
+    padding: 40px;
+    border-radius: 43px;
+    max-width: 450px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: slideUp 0.3s ease;
+    position: relative;
+    border: 3px solid #FFD7D7;
+}
+
+.order-details-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+}
+
+.order-details-close-btn:hover {
+    transform: scale(1.1);
+}
+
+.order-details-close-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.order-details-header {
+    margin-bottom: 30px;
+}
+
+.order-details-title {
+    font-size: 32px;
+    color: #FF516E;
+    margin: 0;
+    font-family: 'Geologica_Auto-Light';
+    line-height: 1.2;
+}
+
+.order-details-info {
+    background: #FFF5EA;
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.order-details-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #FFD7D7;
+}
+
+.order-details-row:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.order-details-label {
+    font-size: 16px;
+    color: #504F4F;
+    font-family: 'Geologica_Auto-Light';
+    flex: 1;
+}
+
+.order-details-value {
+    font-size: 18px;
+    color: #2B2B2B;
+    font-weight: bold;
+    font-family: 'Geologica_Auto-Light';
+    text-align: right;
+    flex: 1;
+}
+
+.order-details-value.total-amount {
+    color: #FF516E;
+    font-size: 24px;
+}
+
+.order-details-image {
+    margin-top: 20px;
+}
+
+.order-details-image img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 45px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 3px solid #FFD7D7;
+}
+
+.alert-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease;
+}
+
+.order-details-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff8686;
+    color: white;
+    border: none;
+    border-radius: 43px; 
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgb(255, 105, 128);
+    min-width: 140px;
+    white-space: nowrap;
+}
+
+.order-details-btn:hover {
+    background-color: #ffaec1b7; 
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 105, 180, 0.3);
+}
+
+.order-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+
+
+@media (max-width: 480px) {
+    .order-details-btn {
+        padding: 8px 14px;
+        font-size: 12px;
+        border-radius: 18px;
+        min-width: auto;
+    }
+    
+    .order-item {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 320px) {
+    .order-details-btn {
+        padding: 7px 12px;
+        font-size: 11px;
+        border-radius: 16px;
+    }
+}
+
+.order-details-btn:disabled:hover {
+    background-color: #cccccc;
+    transform: none;
+    box-shadow: none;
+}
+
+
+.order-details-btn.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    border: 2px solid white;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 0.8s linear infinite;
+}
+
+
+
+@media (max-width: 768px) {
+    .order-actions.multiple-buttons {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .order-actions.multiple-buttons .order-details-btn {
+        width: 100%;
+    }
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.alert-box {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: slideUp 0.3s ease;
+}
+
+.alert-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #FF516E;
+}
+
+.alert-title {
+    font-size: 20px;
+    color: #FF516E;
+    margin-bottom: 15px;
+    font-family: 'Geologica_Auto-Light';
+}
+
+.alert-message {
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    font-family: 'Geologica_Auto-Light';
+}
+
+.alert-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.alert-btn {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s;
+    font-family: 'Geologica_Auto-Light';
+}
+
+.confirm-btn {
+    background: linear-gradient(45deg, #FF516E, #FF8E9D);
+}
+
+.cancel-btn {
+    background: #FFF5EA;
+    color: #504F4F;
+    border: 2px solid #FFD7D7;
+}
+
+.alert-btn:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .profile-header {
+        padding: 30px 20px;
+    }
+    
+    .profile-avatar-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .profile-name {
+        font-size: 30px;
+    }
+    
+    .profile-sections {
+        padding: 30px 20px;
+    }
+    
+    .order-header,
+    .order-details {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .order-actions {
+        flex-direction: column;
+    }
+    
+    .order-rate-btn,
+    .order-details-btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .order-details-content {
+        padding: 30px 20px;
+        max-width: 90%;
+    }
+    
+    .order-details-title {
+        font-size: 26px;
+    }
+    
+    .order-details-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .order-details-label,
+    .order-details-value {
+        text-align: left;
+        width: 100%;
+    }
+}
+
+@media (max-width: 320px) {
+    .profile-main {
+        padding: 15px;
+    }
+    
+    .profile-avatar-wrapper {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .profile-name {
+        font-size: 26px;
+    }
+    
+    .contact-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .section-title-profile {
+        font-size: 24px;
+    }
+    
+    .alert-buttons {
+        gap: 10px;
+    }
+    
+    .alert-buttons .alert-btn {
+        flex: 1;
+        min-width: 0;
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    
+    .order-details-content {
+        padding: 25px 15px;
+        border-radius: 25px;
+    }
+    
+    .order-details-title {
+        font-size: 18px;
+    }
+    
+    .order-details-image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .order-details-close-btn {
+        width: 20px;
+        height: 20px;
+    }
+
+}
+
+.nav-style li a.active,
+.mobile-menu__link.active {
+    color: #FF516E;
+    font-weight: bold;
+    position: relative;
+}
+
+.nav-style li a.active::after,
+.mobile-menu__link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #FF516E;
+    border-radius: 1px;
+}
+
+
+.custom-alert-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10001;
+    justify-content: center;
+    align-items: center;
+    animation: customAlertFadeIn 0.3s ease;
+}
+
+@keyframes customAlertFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.custom-alert-box {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: customAlertSlideUp 0.3s ease;
+    border: 3px solid #ffd1dc;
+    position: relative;
+}
+
+@keyframes customAlertSlideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.custom-alert-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #e91e63;
+    font-weight: bold;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background: linear-gradient(45deg, #FFD7D7, #FFF5EA);
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #ff748e;
+}
+
+.custom-alert-title {
+    margin: 0 0 15px 0;
+    color: #ff3c60;
+    font-size: 24px;
+    font-family: 'Geologica_Auto-Light';
+    font-weight: bold;
+}
+
+.custom-alert-message {
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.5;
+    font-family: 'Geologica_Auto-Light';
+    font-size: 16px;
+}
+
+.custom-alert-btn {
+    background-color: #ff7d95;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+    font-family: 'Geologica_Auto-Light';
+    min-width: 120px;
+}
+
+.custom-alert-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255, 116, 142, 0.3);
+}
+
+.custom-alert-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 116, 142, 0.4);
+}
+
+.input-error {
+    border-color: #ff3c60 !important;
+    background-color: rgba(255, 60, 96, 0.05) !important;
+}
+
+.input-error:focus {
+    box-shadow: 0 0 0 3px rgba(255, 60, 96, 0.1) !important;
+}
+
+.custom-alert-overlay.success .custom-alert-title {
+    color: #ff3c56;
+}
+
+.custom-alert-overlay.success .custom-alert-btn {
+    background-color: #e04a65;
+}
+
+.custom-alert-overlay.success .custom-alert-btn:hover {
+    box-shadow: 0 5px 15px rgba(255, 93, 101, 0.3);
+}
+
+@media (max-width: 480px) {
+    .custom-alert-box {
+        padding: 25px 20px;
+        margin: 0 15px;
+    }
+    
+    .custom-alert-title {
+        font-size: 20px;
+    }
+    
+    .custom-alert-message {
+        font-size: 15px;
+    }
+    
+    .custom-alert-btn {
+        padding: 10px 25px;
+        font-size: 15px;
+    }
+}

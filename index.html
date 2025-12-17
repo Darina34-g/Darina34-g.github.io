@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time for sweet</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="Pictures/Иконка.png">
+</head>
+
+<body>
+    <input type="checkbox" id="burger-toggle" class="burger-toggle">
+    <label for="burger-toggle" class="menu-close-overlay"></label>
+    
+    <header>
+        <div class="hat">
+            <img class="logo" src="Pictures/Иконка.png" alt="Логотип">
+            
+            <label for="burger-toggle" class="burger-btn">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </label>
+            
+            <nav class="desktop-nav">
+                <div class="nav-style">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="vacancy.html">Вакансии</a></li>
+                    
+                    <li><label for="auth-modal" class="open-modal">Вход</label></li>
+                </div>
+                <div class="nav-catalouge">
+                    <li><a href="catalouge.html#cakes">Торты</a></li>
+                    <li><a href="catalouge.html#pastries">Пирожные</a></li>
+                    <li><a href="catalouge.html#pies">Пироги</a></li>
+                    <li><a href="catalouge.html#cookies">Печенье</a></li>
+                    <li><a href="catalouge.html#drinks">Напитки</a></li>
+                </div>
+            </nav>
+            
+            <div class="header-icons">
+                <a href="bin.html"><img src="Pictures/func/Корзина.png" alt="Корзина" class="hat-marker"></a>
+                <a href="profile.html"><img src="Pictures/func/Профиль.png" alt="Профиль" class="hat-marker"></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="strelka-mobileback">
+        <button id="mobile-back-btn">
+            <img src="Pictures/func/Frame 106.svg" alt="Назад">
+        </button> 
+    </div>
+    
+    <div class="mobile-menu">
+        <div class="mobile-menu__content">
+            <div class="mobile-menu__section">
+                <h4 class="mobile-menu__title">Навигация</h4>
+                <ul class="mobile-menu__list">
+                    <li><a href="index.html" class="mobile-menu__link">Главная</a></li>
+                    <li><a href="about.html" class="mobile-menu__link">О нас</a></li>
+                    <li><a href="vacancy.html" class="mobile-menu__link">Вакансии</a></li>
+                    <li><a href="profile.html" class="mobile-menu__link active">Профиль</a></li>
+                    <li><label for="auth-modal" class="mobile-menu__link open-modal">Вход</label></li>
+                    <li><a href="bin.html" class="mobile-menu__link">Корзина</a></li>
+                </ul>
+            </div>
+            <div class="mobile-menu__section">
+                <h4 class="mobile-menu__title">Каталог</h4>
+                <ul class="mobile-menu__list">
+                    <li><a href="catalouge.html#cakes" class="mobile-menu__link">Торты</a></li>
+                    <li><a href="catalouge.html#pastries" class="mobile-menu__link">Пирожные</a></li>
+                    <li><a href="catalouge.html#pies" class="mobile-menu__link">Пироги</a></li>
+                    <li><a href="catalouge.html#cookies" class="mobile-menu__link">Печенье</a></li>
+                    <li><a href="catalouge.html#drinks" class="mobile-menu__link">Напитки</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="banner">
+            <img src="Pictures/Group 9.png" alt="Баннер">
+        </div>
+        <div class="hits">
+            <div class="border"></div>
+            <div class="title-hits">
+                <p>Хиты продаж</p>
+            </div>
+            <div class="border"></div>
+        </div>
+        <div class="hit-sell">
+            <div class="cart">
+                <img src="Pictures/Пирожное Апельсин.png" alt="Апельсин" class="hits-img">
+                <div class="price-weight-container">
+                    <p class="price">410 руб</p>
+                    <p class="weight">300 г</p>
+                </div>
+                <p class="title">Пирожное "Апельсин"</p>
+                <a href="bin.html"><img src="Pictures/func/Корзина.png" alt="Корзина" class="bin"></a>
+            </div>
+
+            <div class="cart">
+                <img src="Pictures/Торт Звёздная мечта.png" alt="Звезда" class="hits-img">
+                <div class="price-weight-container">
+                    <p class="price">2600 руб</p>
+                    <p class="weight">2 кг</p>
+                </div>
+                <p class="title">Торт "Звёздная мечта"</p>
+                <a href="bin.html"><img src="Pictures/func/Корзина.png" alt="Корзина" class="bin"></a>
+            </div>
+
+            <div class="cart">
+                <img src="Pictures/Клубничный фраппе.png" alt="Фраппе" class="hits-img">
+                <div class="price-weight-container">
+                    <p class="price">360 руб</p>
+                    <p class="weight">300 г</p>
+                </div>
+                <p class="title">Клубничный Фраппе</p>
+                <a href="bin.html"><img src="Pictures/func/Корзина.png" alt="Корзина" class="bin"></a>
+            </div>
+        </div>
+        <div class="order">
+            <img src="Pictures/Готовим на заказ.png" alt="Фотография" class="man">
+            <div class="text-order">
+                <h2>Готовим на заказ</h2>
+                <div class="info-text">
+                    <p class="text">Наша компания специализируется на
+                        создании уникальных и вкусных
+                        сладостей, которые идеально подойдут
+                        для любых мероприятий: корпоративов,
+                        свадеб, дней рождения и других
+                        праздников.</p>
+                    <p class="text-calling">Связаться с нами:<br>
+                        +79104158123
+                        tfsweet@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer">
+            <div class="nav-left">
+                <nav class="footer-nav">
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="vacancy.html">Вакансии</a></li>
+                </nav>
+            </div>
+            <div class="nav-right">
+                <h4>Контакты</h4>
+                <div class="contacts">
+                    <p class="text">+79104158123</p>
+                    <p class="text">tfsweet@gmail.com</p>
+                    <img src="Pictures/marker 1.png" alt="Метка" class="metka">
+                    <p class="text">Санкт-Петербург, Невский проспект, 65</p>
+                </div>
+                <div class="footer-apps">
+                    <a href="http://"><img src="Pictures/apps/Vk.png" alt="Vk" class="footer-icons"></a>
+                    <a href="http://"><img src="Pictures/apps/Telegram.png" alt="Telegram" class="footer-icons"></a>
+                </div>
+            </div>
+            <p class="footer-title">TIME for SWEET©2007 - 2025</p>
+        </div>
+        
+        <input type="checkbox" id="auth-modal">
+        <div class="autorize-overlay">
+            <div class="autorize">
+                <label for="auth-modal" class="close-btn">
+                    <img src="Pictures/func/exit.png" alt="выход">
+                </label>
+                <div class="title-autorize">
+                    <p>Вход в аккаунт</p>
+                </div>
+                <form action="/test" method="get">
+                    <div>
+                        <div class="line-input">
+                            <label for="text" class="cell">Логин</label>
+                            <input type="text" placeholder="Введите логин" name="text" id="text">
+                        </div>
+                        <div class="line-input">
+                            <label for="password" class="cell">Пароль</label>
+                            <input type="password" placeholder="Введите пароль" name="password" id="password">
+                        </div>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" name="member" id="member">
+                        <label for="member">Запомнить меня</label>
+                    </div>
+                    <div>
+                        <button type="submit">Войти</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const burgerToggle = document.getElementById('burger-toggle');
+            const menuCloseOverlay = document.querySelector('.menu-close-overlay');
+            const mobileBackBtn = document.getElementById('mobile-back-btn');
+            const mobileMenuLinks = document.querySelectorAll('.mobile-menu__link');
+            
+            if (menuCloseOverlay) {
+                menuCloseOverlay.addEventListener('click', function() {
+                    burgerToggle.checked = false;
+                    document.body.style.overflow = '';
+                });
+            }
+            
+            if (mobileBackBtn) {
+                mobileBackBtn.addEventListener('click', function() {
+                    burgerToggle.checked = false;
+                    document.body.style.overflow = '';
+                });
+            }
+            
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    if (this.classList.contains('open-modal')) {
+                        return;
+                    }
+                    burgerToggle.checked = false;
+                    document.body.style.overflow = '';
+                });
+            });
+            
+            if (burgerToggle) {
+                burgerToggle.addEventListener('change', function() {
+                    if (this.checked) {
+                        document.body.style.overflow = 'hidden';
+                    } else {
+                        document.body.style.overflow = '';
+                    }
+                });
+            }
+            
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && burgerToggle.checked) {
+                    burgerToggle.checked = false;
+                    document.body.style.overflow = '';
+                }
+            });
+        });
+    </script>
+    <script src="js/auth-validation.js"></script>
+</body>
+</html>
