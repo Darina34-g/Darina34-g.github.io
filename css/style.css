@@ -4958,3 +4958,29 @@ footer {
     }
 }
 
+@media (max-width: 370px) {
+    .hat {
+        padding: 8px 8px !important;
+    }
+    
+    .logo {
+        width: 65px !important;
+    }
+    
+    .burger-btn {
+        width: 26px;
+        height: 20px;
+    }
+    
+    .mobile-menu {
+        width: 250px;
+        padding: 70px 12px 25px;
+    }
+    
+    .mobile-menu__link {
+        padding: 10px 12px;
+        font-size: 15px;
+    }
+}
+
+
